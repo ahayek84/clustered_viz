@@ -26,7 +26,8 @@ SECRET_KEY = '#lm20skb5bwkz!!gqox7wx8#()biq0^a6k9%+79)+o52a_tsen'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-'afternoon-earth-08431.herokuapp.com'
+'afternoon-earth-08431.herokuapp.com',
+    '127.0.0.1'
 ]
 
 
@@ -56,7 +57,7 @@ ROOT_URLCONF = 'clustered_viz.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'clustered_viz/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
