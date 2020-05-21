@@ -1,4 +1,12 @@
 {% extends 'base.html' %}
 {% block content %}
-    <h1>This is my home page </h1>
+    <div class="container">
+        <div id='myDiv'>
+    </div>
+{% endblock %}
+
+<!-- load my custome js -->
+{% load static from staticfiles %}
+{% block scripts %}
+    <script type="module" src="{% static 'resources\js\index.js' %}"></script>
 {% endblock %}

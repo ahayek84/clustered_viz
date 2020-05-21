@@ -1,0 +1,18 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Point","coordinates":[35.105319,31.796299]},"properties":{"cartodb_id":24,"name_en":"Jerusalem","name_ar":"القدس","label-text":"القدس"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[35.361198,32.321085]},"properties":{"cartodb_id":27,"name_en":"Tubas & Northern Valleys","name_ar":"طوباس والأغوار الشمالية","label-text":"طوباس والأغوار الشمالية"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[35.011119,32.307929]},"properties":{"cartodb_id":28,"name_en":"Tulkarm","name_ar":"طولكرم","label-text":"طولكرم"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[34.234727,31.296779]},"properties":{"cartodb_id":29,"name_en":"Rafah","name_ar":"رفح","label-text":"رفح"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[34.342176,31.417138]},"properties":{"cartodb_id":30,"name_en":"Deir Al-Balah","name_ar":"دير البلح","label-text":"دير البلح"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[34.470986,31.529395]},"properties":{"cartodb_id":31,"name_en":"North Gaza","name_ar":"شمال غزة","label-text":"شمال غزة"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[35.23017,32.224308]},"properties":{"cartodb_id":21,"name_en":"Nablus","name_ar":"نابلس","label-text":"نابلس"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[35.091071,31.532587]},"properties":{"cartodb_id":17,"name_en":"Hebron","name_ar":"الخليل","label-text":"الخليل"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[34.29483,31.346116]},"properties":{"cartodb_id":18,"name_en":"Khan Yunis","name_ar":"خان يونس","label-text":"خان يونس"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[34.444233,31.498507]},"properties":{"cartodb_id":33,"name_en":"Gaza","name_ar":"غزة","label-text":"غزة"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[35.193466,31.692593]},"properties":{"cartodb_id":34,"name_en":"Bethlehem","name_ar":"بيت لحم","label-text":"بيت لحم"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[34.972916,32.185882]},"properties":{"cartodb_id":38,"name_en":"Qalqilya","name_ar":"قلقيلية","label-text":"قلقيلية"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[35.095139,32.099794]},"properties":{"cartodb_id":37,"name_en":"Salfit","name_ar":"سلفيت","label-text":"سلفيت"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[35.175476,31.966962]},"properties":{"cartodb_id":36,"name_en":"Ramallah & Al-Bireh","name_ar":"رام الله والبيرة","label-text":"رام الله والبيرة"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[35.478699,32.023538]},"properties":{"cartodb_id":35,"name_en":"Jericho & Al-Aghwar","name_ar":"أريحا والأغوار","label-text":"أريحا والأغوار"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[35.22821,32.438429]},"properties":{"cartodb_id":39,"name_en":"Jenin","name_ar":"جنين","label-text":"جنين"}}
+]}

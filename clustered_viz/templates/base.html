@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head>
+<head dir="rtl" lang="en">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,23 +9,48 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://unpkg.com/@coreui/coreui@3.0.0-rc.0/dist/css/coreui.min.css">
+
     <title>Hello, world!</title>
 </head>
-<body>
-<div class="container">
-    {% if messages %}
-        {% for message in messages %}
-            <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                {{ message }}
-            </div>
-        {% endfor %}
-    {% endif %}
-    {% block content %}
-    {% endblock %}
+<body class="c-app">
+
+<!--
+Include the nav bar
+-->
+{% include 'menu.html' %}
+
+<div class="c-wrapper">
+{#    <header class="c-header">#}
+{#        <!-- Header content here -->#}
+{#    </header>#}
+    <div class="c-body">
+        <main class="c-main">
+            <!-- Main content here -->
+            <!--div class="container"-->
+                <!-- Add Message -->
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                {% endif %}
+                <!-- Add block content -->
+                {% block content %}
+                {% endblock %}
+            <!--/div-->
+        </main>
+    </div>
+{#    <footer class="c-footer">#}
+{#        <!-- Footer content here -->#}
+{#    </footer>#}
 </div>
+
+
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -37,5 +62,17 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+<!-- CoreUI JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"
+        integrity="sha384-L2pyEeut/H3mtgCBaUNw7KWzp5n9&#43;4pDQiExs933/5QfaTh8YStYFFkOzSoXjlTb"
+        crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@coreui/coreui@3.0.0-rc.0/dist/js/coreui.min.js"></script>
+<!-- plotly JavaScript -->
+<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+
+<!-- Load my scripts -->
+{% block scripts %}
+{% endblock %}
+
 </body>
 </html>
