@@ -5,13 +5,42 @@ export default class FileManager {
         this.file = '';
         this.con = new Constants()
     }
+    /// it has to be added as directive
+    function
 
-    // Adding a method to the constructor
+    // Adding a method to the constructor Dont Delete it
     greet() {
         console.log('haha')
     }
 
-    function
+    getKeyByValue(object, value) {
+      return Object.keys(object).find(key => object[key] === value);
+    }
+
+    // Adding a method to the constructor
+    get_geo_names(codes, type = 'en') {
+        var dic = this.con.get_geoname_lookup(type)
+        var newcodes = codes.map(x => dic[x])
+        console.log(newcodes)
+        return newcodes
+    }
+
+    get_style_map(type = 'en'){
+        var res = "mapbox://styles/pmaoque/cjvnmbu4v03c51dp9ztq1vfnw"
+        if (type == 'ar'){
+            res = "mapbox://styles/pmaoque/cjvnm9c5w01o71cptm2xe655j"
+        }
+        return res
+    }
+
+    get_geojson_map(type = 'en'){
+        var li = this.con.get_list_geojson()
+        var res = li.governorates_en
+        if (type == 'ar'){
+            res = li.governorates_ar
+        }
+        return res
+    }
 
     readTextFile(file) {
         var rawFile = new XMLHttpRequest();

@@ -1,4 +1,5 @@
 export default class Constants {
+
     constructor() {
         this.file = '';
     }
@@ -168,7 +169,8 @@ export default class Constants {
             arab_countries : 'Arab_Countries.json',
             border_line : 'Border_Line.json',
             governorates_points_edited:'governorate_points_edited.json',
-            governorates:'Governorates.json',
+            governorates_en:'Governorates.json',
+            governorates_ar:'Governorates_ar.json',
             locality2017:'Locality2017.json',
             palestine_border:'Palestine_Border.json',
             river:'River.json',
@@ -181,8 +183,51 @@ export default class Constants {
 
     ///
 
-    get_feature_lookup(){
+    get_geoname_lookup(type){
+    var geo_codes_en = {
+        1235:"Jericho & Al Aghwar",
+        2475:"Rafah",
+        2455:"North Gaza",
+        1110:"Tulkarm",
+        1240:"Jerusalem",
+        2460:"Gaza",
+        2470:"Khan Yunis",
+        1120:"Qalqiliya",
+        1101:"Jenin",
+        2465:"Deir Al Balah",
+        1125:"Salfit",
+        1350:"Hebron",
+        1230:"Ramallah & Al Bireh",
+        1105:"Tubas",
+        1115:"Nablus",
+        1345:"Bethlehem"
+    };
 
+    var geo_codes_ar = {
+        1235:"أريحا والأغوار",
+        2475:"رفح",
+        2455:"شمال غزة",
+        1110:"طولكرم",
+        1240:"القدس",
+        2460:"غزة",
+        2470:"خانيونس",
+        1120:"قلقيلية",
+        1101:"جنين",
+        2465:"دير البلح",
+        1125:"سلفيت",
+        1350:"الخليل",
+        1230:"رام الله والبيرة",
+        1105:"طوباس",
+        1115:"نابلس",
+        1345:"بيت لحم"
+    };
+
+    var dic = geo_codes_en
+    if (type == 'ar') {
+        dic = geo_codes_ar
+    }
+
+    return dic
 
     }
 

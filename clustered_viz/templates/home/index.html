@@ -8,5 +8,6 @@
 <!-- load my custome js -->
 {% load static from staticfiles %}
 {% block scripts %}
+    <script src="{% static 'resources\js\plotly-mapbox.min.js' %}"></script>
     <script type="module" src="{% static 'resources\js\index.js' %}"></script>
 {% endblock %}
