@@ -15,10 +15,18 @@ heroku logs -t
 //
 heroku logs -n 1500
 
-
-
 --------------------
 
 check app databse on heroku like on local
 sqlite3  db.sqlite3
+
+---------------
+
+deploy
+
+$ heroku create
+$ git push heroku master
+
+$ heroku run python manage.py migrate
+$ heroku open
 
