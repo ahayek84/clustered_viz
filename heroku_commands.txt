@@ -1,0 +1,24 @@
+run heroku app shell
+afternoon-earth-08431
+-----------
+heroku login
+SET APPNAME=afternoon-earth-08431
+heroku run bash -a %APPNAME%
+$ ls
+$ exit
+-----------
+
+check hero logs
+// live
+heroku logs -t
+
+//
+heroku logs -n 1500
+
+
+
+--------------------
+
+check app databse on heroku like on local
+sqlite3  db.sqlite3
+
