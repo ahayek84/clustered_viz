@@ -1,0 +1,8 @@
+<div id='myDiv'>
+
+<!-- load my custome js -->
+{% load static %}
+{% block scripts %}
+    <script src="{% static 'resources\js\plotly-mapbox.min.js' %}"></script>
+    <script type="module" src="{% static 'resources\js\home\map.js' %}"></script>
+{% endblock %}

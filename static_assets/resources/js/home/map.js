@@ -1,5 +1,5 @@
-import FileManager from './file_manager.js';
-import Constants from './constants.js';
+import FileManager from './../file_manager.js';
+import Constants from './../constants.js';
 
 var fm = new FileManager()
 var con = new Constants()
@@ -50,6 +50,3 @@ var options = {
 }
 
 Plotly.newPlot("myDiv", data, layout, options);
-
-
-
