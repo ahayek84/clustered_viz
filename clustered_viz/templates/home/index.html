@@ -1,7 +1,20 @@
 {% extends 'base.html' %}
 {% block content %}
-    <div class="container">
-        {% include 'home/map.html' %}
+    <div class="container-fluid">
+    <div class="fade-in">
+        <!-- /.row-->
+        <div class="card">
+            {% include 'home/map.html' %}
+        </div>
+        <!-- /.card-->
+        <div class="row">
+            {% include 'home/cards.html' %}
+        </div>
+        <!-- /.row-->
+        <div class="row">
+            {% include 'home/table.html' %}
+            <!-- /.row-->
+        </div>
     </div>
 {% endblock %}
 

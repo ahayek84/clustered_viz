@@ -4,7 +4,7 @@ import Constants from './../constants.js';
 var fm = new FileManager()
 var con = new Constants()
 var li = con.get_list_geojson()
-var lang = "en"
+var lang = "ar"
 
 var geo_id = ["1235", "2475", "2455","1110", "1240", "2460","2470","1120",
                 "1101","2465", "1125", "1350","1230", "1105", "1115","1345"]
@@ -41,12 +41,13 @@ var data = [{
 var layout = {
     mapbox: {style: fm.get_style_map(lang), center: {lon: 35.208116, lat: 31.814685}, zoom: 7.5},
     // width: 600,
-    // height: 400,
+    //height: 500,
     margin: {t: 0, b: 0}
 };
 
 var options = {
-    mapboxAccessToken: 'pk.eyJ1IjoicG1hb3F1ZSIsImEiOiJjanZpMHNnNGowMHlvM3lxbHA3ZWdodzlyIn0.6m3CU9tWBXh1Jt7xMRYxOw'
+    mapboxAccessToken: 'pk.eyJ1IjoicG1hb3F1ZSIsImEiOiJjanZpMHNnNGowMHlvM3lxbHA3ZWdodzlyIn0.6m3CU9tWBXh1Jt7xMRYxOw',
+    responsive: true
 }
 
 Plotly.newPlot("myDiv", data, layout, options);

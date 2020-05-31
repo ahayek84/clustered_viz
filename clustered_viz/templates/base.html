@@ -1,4 +1,5 @@
 <!doctype html>
+{% load static %}
 <html lang="en">
 <head dir="rtl" lang="en">
     <!-- Required meta tags -->
@@ -12,45 +13,113 @@
     <link rel="stylesheet" href="https://unpkg.com/@coreui/coreui@3.0.0-rc.0/dist/css/coreui.min.css">
 
     <title>Hello, world!</title>
+
+    <!-- added from coreui index abed -->
+    <!-- Main styles for this application-->
+    <link href="{% static 'resources/coreui/css/style.css' %}" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics-->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        // Shared ID
+        gtag('config', 'UA-118965717-3');
+        // Bootstrap ID
+        gtag('config', 'UA-118965717-5');
+    </script>
+    <link href="{% static 'resources/coreui/vendors/@coreui/chartjs/css/coreui-chartjs.css' %}" rel="stylesheet">
+
 </head>
 <body class="c-app">
 
 <!--
 Include the nav bar
 -->
-{% include 'menu.html' %}
-
-<div class="c-wrapper">
-{#    <header class="c-header">#}
-{#        <!-- Header content here -->#}
-{#    </header>#}
-    <div class="c-body">
+    <div class="c-wrapper c-fixed-components">
+      <header class="c-header c-header-light c-header-fixed c-header-with-subheader">
+        <ul class="c-header-nav d-md-down-none">
+          <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="#">Dashboard</a></li>
+          <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="#">Users</a></li>
+          <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="#">Settings</a></li>
+        </ul>
+        <ul class="c-header-nav ml-auto mr-4">
+          <li class="c-header-nav-item d-md-down-none mx-2"><a class="c-header-nav-link" href="#">
+              <svg class="c-icon">
+                <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-bell"></use>
+              </svg></a></li>
+          <li class="c-header-nav-item d-md-down-none mx-2"><a class="c-header-nav-link" href="#">
+              <svg class="c-icon">
+                <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-list-rich"></use>
+              </svg></a></li>
+          <li class="c-header-nav-item d-md-down-none mx-2"><a class="c-header-nav-link" href="#">
+              <svg class="c-icon">
+                <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-envelope-open"></use>
+              </svg></a></li>
+          <li class="c-header-nav-item dropdown"><a class="c-header-nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              <div class="c-avatar"><img class="c-avatar-img" src="{% static 'resources/coreui/assets/img/avatars/6.jpg' %}" alt="user@email.com"></div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right pt-0">
+              <div class="dropdown-header bg-light py-2"><strong>Account</strong></div><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-bell"></use>
+                </svg> Updates<span class="badge badge-info ml-auto">42</span></a><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-envelope-open"></use>
+                </svg> Messages<span class="badge badge-success ml-auto">42</span></a><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-task"></use>
+                </svg> Tasks<span class="badge badge-danger ml-auto">42</span></a><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-comment-square"></use>
+                </svg> Comments<span class="badge badge-warning ml-auto">42</span></a>
+              <div class="dropdown-header bg-light py-2"><strong>Settings</strong></div><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-user"></use>
+                </svg> Profile</a><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-settings"></use>
+                </svg> Settings</a><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-credit-card"></use>
+                </svg> Payments<span class="badge badge-secondary ml-auto">42</span></a><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-file"></use>
+                </svg> Projects<span class="badge badge-primary ml-auto">42</span></a>
+              <div class="dropdown-divider"></div><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-lock-locked"></use>
+                </svg> Lock Account</a><a class="dropdown-item" href="#">
+                <svg class="c-icon mr-2">
+                  <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-account-logout"></use>
+                </svg> Logout</a>
+            </div>
+          </li>
+        </ul>
+        <div class="c-subheader px-3">
+          <!-- Breadcrumb-->
+          <ol class="breadcrumb border-0 m-0">
+            <li class="breadcrumb-item">Home</li>
+            <li class="breadcrumb-item"><a href="#">Admin</a></li>
+            <li class="breadcrumb-item active">Dashboard</li>
+            <!-- Breadcrumb Menu-->
+          </ol>
+        </div>
+      </header>
+      <div class="c-body">
         <main class="c-main">
-            <!-- Main content here -->
-            <!--div class="container"-->
-                <!-- Add Message -->
-                {% if messages %}
-                    {% for message in messages %}
-                        <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            {{ message }}
-                        </div>
-                    {% endfor %}
-                {% endif %}
-                <!-- Add block content -->
-                {% block content %}
-                {% endblock %}
-            <!--/div-->
+            {% block content %}
+            {% endblock %}
         </main>
+      </div>
     </div>
-{#    <footer class="c-footer">#}
-{#        <!-- Footer content here -->#}
-{#    </footer>#}
-</div>
-
-
+<!--
+Load all JS files
+-->
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -66,7 +135,17 @@ Include the nav bar
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"
         integrity="sha384-L2pyEeut/H3mtgCBaUNw7KWzp5n9&#43;4pDQiExs933/5QfaTh8YStYFFkOzSoXjlTb"
         crossorigin="anonymous"></script>
-<script src="https://unpkg.com/@coreui/coreui@3.0.0-rc.0/dist/js/coreui.min.js"></script>
+
+<!-- added from coreui index abed -->
+<!-- CoreUI and necessary plugins-->
+<script src="{% static 'resources/coreui/vendors/@coreui/coreui/js/coreui.bundle.min.js' %}"></script>
+<!--[if IE]><!-->
+<script src="{% static 'resources/coreui/vendors/@coreui/icons/js/svgxuse.min.js' %}"></script>
+<!--<![endif]-->
+<!-- Plugins and scripts required by this view-->
+<script src="{% static 'resources/coreui/vendors/@coreui/chartjs/js/coreui-chartjs.bundle.js' %}"></script>
+<script src="{% static 'resources/coreui/vendors/@coreui/utils/js/coreui-utils.js' %}"></script>
+<script src="{% static 'resources/coreui/js/main.js' %}"></script>
 
 <!-- Load my scripts -->
 {% block scripts %}
