@@ -38,6 +38,9 @@ export default class MapManager {
             zmax: 280,
             showlegend:true,
             showscale:false,
+            hovertemplate : '<b>Name</b>: <b>%{text}</b>'+
+                                            '<br><b>Val </b>: %{z}<br>',
+            text: geo_name_en,
             colorbar: {y: 0, yanchor: "bottom", title: {text: "Palestine", side: "right"}}
         },
             {
@@ -52,6 +55,9 @@ export default class MapManager {
                 zmax: 280,
                 showlegend:true,
                 showscale:false,
+                hovertemplate : '<b>Name</b>: <b>%{text}</b>'+
+                                            '<br><b>Val </b>: %{z}<br>',
+                text: this.fm.get_local_names(this.local_id, lang),
                 colorbar: {y: 0, yanchor: "bottom", title: {text: "Palestine", side: "right"}}
             }
         ];
