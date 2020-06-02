@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8e535ea2-eeb0-4b97-910c-e0cb042c0ccb" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static_assets/resources/js/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/static_assets/resources/js/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static_assets/resources/js/file_manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/static_assets/resources/js/file_manager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clustered_viz/templates/home/map.html" beforeDir="false" afterPath="$PROJECT_DIR$/clustered_viz/templates/home/map.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static_assets/resources/js/home/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/static_assets/resources/js/home/map.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static_assets/resources/js/map_manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/static_assets/resources/js/map_manager.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,94 +19,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/clustered_viz/templates/home/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="constants.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static_assets/resources/js/constants.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="184" column="20" selection-start-line="184" selection-start-column="12" selection-end-line="184" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="map_manager.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/static_assets/resources/js/map_manager.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="49" column="62" selection-start-line="49" selection-start-column="62" selection-end-line="49" selection-end-column="62" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static_assets/resources/js/home/index.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="map.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static_assets/resources/js/home/map.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="file_manager.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static_assets/resources/js/file_manager.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="55" column="22" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sample_data.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static_assets/resources/js/sample_data.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="map.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/clustered_viz/templates/home/map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="30" />
+            <state relative-caret-position="198">
+              <caret line="18" column="78" selection-start-line="18" selection-start-column="78" selection-end-line="18" selection-end-column="78" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/clustered_viz/settings.py">
+      <file leaf-file-name="map.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static_assets/resources/js/home/map.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2684">
-              <caret line="122" column="43" selection-start-line="122" selection-start-column="43" selection-end-line="122" selection-end-column="43" />
+            <state relative-caret-position="154">
+              <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/clustered_viz/templates/base.html">
+      <file leaf-file-name="map_manager.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static_assets/resources/js/map_manager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2464">
-              <caret line="112" column="50" selection-start-line="112" selection-start-column="50" selection-end-line="112" selection-end-column="50" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="613">
+              <caret line="39" column="18" lean-forward="true" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -165,7 +100,6 @@
         <option value="$PROJECT_DIR$/heroku_commands.txt" />
         <option value="$PROJECT_DIR$/clustered_viz/settings.py" />
         <option value="$PROJECT_DIR$/clustered_viz/templates/index.html" />
-        <option value="$PROJECT_DIR$/clustered_viz/templates/home/map.html" />
         <option value="$PROJECT_DIR$/clustered_viz/templates/home/cards.html" />
         <option value="$PROJECT_DIR$/clustered_viz/templates/home/table.html" />
         <option value="$PROJECT_DIR$/clustered_viz/templates/base.html" />
@@ -174,10 +108,11 @@
         <option value="$PROJECT_DIR$/static_assets/resources/js/sample_data.js" />
         <option value="$PROJECT_DIR$/static_assets/resources/js/home/index.js" />
         <option value="$PROJECT_DIR$/static_assets/resources/js/home/map_manager.js" />
-        <option value="$PROJECT_DIR$/static_assets/resources/js/home/map.js" />
         <option value="$PROJECT_DIR$/static_assets/resources/js/constants.js" />
         <option value="$PROJECT_DIR$/static_assets/resources/js/file_manager.js" />
         <option value="$PROJECT_DIR$/static_assets/resources/js/map_manager.js" />
+        <option value="$PROJECT_DIR$/clustered_viz/templates/home/map.html" />
+        <option value="$PROJECT_DIR$/static_assets/resources/js/home/map.js" />
       </list>
     </option>
   </component>
@@ -203,6 +138,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -210,62 +146,10 @@
               <item name="clustered_viz" type="b2602c69:ProjectViewProjectNode" />
               <item name="clustered_viz" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="clustered_viz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="clustered_viz" type="462c0819:PsiDirectoryNode" />
-              <item name="clustered_viz" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="clustered_viz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="clustered_viz" type="462c0819:PsiDirectoryNode" />
-              <item name="clustered_viz" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="clustered_viz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="clustered_viz" type="462c0819:PsiDirectoryNode" />
-              <item name="clustered_viz" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="clustered_viz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="clustered_viz" type="462c0819:PsiDirectoryNode" />
-              <item name="static_assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="clustered_viz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="clustered_viz" type="462c0819:PsiDirectoryNode" />
-              <item name="static_assets" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="clustered_viz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="clustered_viz" type="462c0819:PsiDirectoryNode" />
-              <item name="static_assets" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="geojson" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="clustered_viz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="clustered_viz" type="462c0819:PsiDirectoryNode" />
-              <item name="static_assets" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="clustered_viz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="clustered_viz" type="462c0819:PsiDirectoryNode" />
-              <item name="static_assets" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -423,7 +307,21 @@
       <option name="project" value="LOCAL" />
       <updated>1590932242049</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary=" sss push coreui assets2 33">
+      <created>1591022709381</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1591022709381</updated>
+    </task>
+    <task id="LOCAL-00015" summary="fix label of map">
+      <created>1591094409896</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1591094409896</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView">
@@ -439,14 +337,14 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="14" />
+      <window_info anchor="bottom" id="TODO" order="14" weight="0.32900432" />
       <window_info anchor="bottom" id="Event Log" order="21" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="20" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="19" weight="0.50108224" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="19" visible="true" weight="0.2099567" />
       <window_info anchor="bottom" id="Python Console" order="23" weight="0.32900432" />
       <window_info anchor="bottom" id="Run" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="22" visible="true" weight="0.12770563" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21268657" />
+      <window_info anchor="bottom" id="Terminal" order="22" weight="0.18614718" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.104477614" />
       <window_info anchor="bottom" id="Docker" order="18" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="SciView" order="5" />
@@ -457,34 +355,34 @@
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="5" />
-      <window_info anchor="bottom" id="Messages" order="0" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="3" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Python Console" order="13" weight="0.32900432" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.29220778" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.26406926" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Messages" order="0" />
+      <window_info anchor="bottom" id="Run" order="3" />
+      <window_info anchor="bottom" id="Find" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21055438" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="bottom" id="Messages" order="0" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.29220778" />
+      <window_info anchor="bottom" id="Python Console" order="13" weight="0.32900432" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -528,7 +426,9 @@
     <MESSAGE value=" sss" />
     <MESSAGE value=" sss push coreui assets" />
     <MESSAGE value=" sss push coreui assets2" />
-    <option name="LAST_COMMIT_MESSAGE" value=" sss push coreui assets2" />
+    <MESSAGE value=" sss push coreui assets2 33" />
+    <MESSAGE value="fix label of map" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix label of map" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/clustered_viz/settings.py">
@@ -724,13 +624,6 @@
     <entry file="file://$PROJECT_DIR$/runtime.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/heroku_commands.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
@@ -792,15 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5478">
           <caret line="249" column="20" selection-start-line="249" selection-start-column="20" selection-end-line="249" selection-end-column="20" />
-          <folding>
-            <element signature="e#130#135#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#td#3;n#tr#1;n#tbody#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#td#3;n#tr#2;n#tbody#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#td#3;n#tr#3;n#tbody#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#td#3;n#tr#4;n#tbody#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#td#3;n#tr#5;n#tbody#0;n#table#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -811,13 +695,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/clustered_viz/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/static_assets/resources/js/constants.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2464">
-          <caret line="112" column="50" selection-start-line="112" selection-start-column="50" selection-end-line="112" selection-end-column="50" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="616">
+          <caret line="184" column="20" selection-start-line="184" selection-start-column="12" selection-end-line="184" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -828,6 +709,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/heroku_commands.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static_assets/resources/js/home/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static_assets/resources/js/file_manager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="55" column="22" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/static_assets/resources/js/sample_data.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -835,44 +733,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/clustered_viz/templates/home/map.html">
+    <entry file="file://$PROJECT_DIR$/clustered_viz/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static_assets/resources/js/home/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static_assets/resources/js/home/map.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static_assets/resources/js/file_manager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="55" column="22" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static_assets/resources/js/constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="184" column="20" selection-start-line="184" selection-start-column="12" selection-end-line="184" selection-end-column="20" />
+        <state relative-caret-position="635">
+          <caret line="112" column="50" selection-start-line="112" selection-start-column="50" selection-end-line="112" selection-end-column="50" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static_assets/resources/js/map_manager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="49" column="62" selection-start-line="49" selection-start-column="62" selection-end-line="49" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="613">
+          <caret line="39" column="18" lean-forward="true" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clustered_viz/templates/home/map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="18" column="78" selection-start-line="18" selection-start-column="78" selection-end-line="18" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static_assets/resources/js/home/map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
         </state>
       </provider>
     </entry>
