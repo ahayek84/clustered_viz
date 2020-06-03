@@ -56,7 +56,7 @@ export default class MapManager {
         Plotly.react("myDiv", this.data, this.layout);
     }
 
-    add_layer(ly_id,ly_label,ly_type,ly_parts,zvalues) {
+    add_layer(ly_id,ly_label,ly_color,ly_type,ly_parts,zvalues) {
         /*
         * ly_type : 1 for geos , 2 for localities
         * */
@@ -70,7 +70,7 @@ export default class MapManager {
             {
                 type: "choroplethmapbox",
                 autocolorscale: false,
-                colorscale: [[0, 'rgb(255,255,255)'], [1, 'rgb(255,0,0)']],
+                colorscale: [[0, 'rgb(255,255,255)'], [1, ly_color]],
                 name: ly_name + ' ' + ly_label,
                 geojson: this.fm.getFileJSON(geo_json_map),
                 locations: geo_locals_names,
