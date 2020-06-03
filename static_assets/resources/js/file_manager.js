@@ -19,6 +19,14 @@ export default class FileManager {
         return Object.keys(object).find(key => object[key] === value);
     }
 
+    get_names(code_type = 1,codes, type = 'en'){
+      if (code_type != 1){ // localities
+          return this.get_local_names(codes, type)
+      }
+      else{
+          return this.get_geo_names(codes, type)
+      }
+    }
     // Adding a method to the constructor
     get_geo_names(codes, type = 'en') {
         var dic = this.con.get_geoname_lookup(type)
@@ -41,6 +49,26 @@ export default class FileManager {
         return res
     }
 
+    /// need abstraction
+    get_geojson_layer(layer_id = 1, type = 'en') {
+        // layer_id = 1 means palestine
+        var res = ''
+        var li = this.con.get_list_geojson()
+        if (layer_id == 1) {
+            var res = li.governorates_en
+            if (type == 'ar') {
+                res = li.governorates_ar
+            }
+        } else if (layer_id == 1345) {
+                console.log(li)
+                res = li.bethlehem_localities
+                if (type == 'ar') {
+                    res = li.bethlehem_localities_ar
+                }
+        }
+        return res
+    }
+
     get_geojson_map(type = 'en') {
         var li = this.con.get_list_geojson()
         var res = li.governorates_en
@@ -54,13 +82,15 @@ export default class FileManager {
         var li = this.con.get_list_geojson()
         var res = ''
         if (id == 1345) {
-                res = li.bethlehem_localities
+            res = li.bethlehem_localities
             if (type == 'ar') {
                 res = li.bethlehem_localities_ar
             }
         }
         return res
     }
+
+    /////// need abstraction
 
     readTextFile(file) {
         var rawFile = new XMLHttpRequest();

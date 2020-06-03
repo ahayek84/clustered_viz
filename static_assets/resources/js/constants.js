@@ -29,6 +29,7 @@ export default class Constants {
 
     get_geoname_lookup(type) {
         var geo_codes_en = {
+            1:'Palestine',
             1235: "Jericho & Al Aghwar",
             2475: "Rafah",
             2455: "North Gaza",
@@ -48,6 +49,7 @@ export default class Constants {
         };
 
         var geo_codes_ar = {
+            1:'فلسطين',
             1235: "أريحا والأغوار",
             2475: "رفح",
             2455: "شمال غزة",
