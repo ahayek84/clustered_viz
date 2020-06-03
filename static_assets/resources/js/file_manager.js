@@ -19,14 +19,15 @@ export default class FileManager {
         return Object.keys(object).find(key => object[key] === value);
     }
 
-    get_names(code_type = 1,codes, type = 'en'){
-      if (code_type != 1){ // localities
-          return this.get_local_names(codes, type)
-      }
-      else{
-          return this.get_geo_names(codes, type)
-      }
+    get_names(code_type = 1, codes, type = 'en') {
+        if (code_type != 1) { // localities
+            return this.get_local_names(codes, type)
+        }
+        else {
+            return this.get_geo_names(codes, type)
+        }
     }
+
     // Adding a method to the constructor
     get_geo_names(codes, type = 'en') {
         var dic = this.con.get_geoname_lookup(type)
@@ -60,11 +61,11 @@ export default class FileManager {
                 res = li.governorates_ar
             }
         } else if (layer_id == 1345) {
-                console.log(li)
-                res = li.bethlehem_localities
-                if (type == 'ar') {
-                    res = li.bethlehem_localities_ar
-                }
+            console.log(li)
+            res = li.bethlehem_localities
+            if (type == 'ar') {
+                res = li.bethlehem_localities_ar
+            }
         }
         return res
     }
@@ -116,6 +117,17 @@ export default class FileManager {
             data = JSON.parse(text);
         }
         return data
+    }
+
+    getDataJSON() {
+        var text = this.readTextFile(this.getURL() + "static/resources/js/data.json")
+        var data = ''
+        if (text == null) {
+            data = {features: []}
+        } else {
+            data = JSON.parse(text);
+        }
+        return data['data']
     }
 
     getFeatures(js) {

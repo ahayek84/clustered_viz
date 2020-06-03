@@ -22,7 +22,7 @@ function refresh_map() {
         ]
     var ly_values = [1041, 1040, 1055, 1047, 1032, 1046, 1501, 1000, 500]
     var ly_type = 2 // localities
-    var ly_label = 'econmics'
+    var ly_label = 'Econmics'
     var ly_color = 'rgb(0,0,255)'
     map.add_layer(ly_id,ly_label,ly_color,ly_type,ly_parts,ly_values)
 }
