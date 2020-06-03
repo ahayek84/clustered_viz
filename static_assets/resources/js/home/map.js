@@ -28,3 +28,6 @@ function refresh_map() {
 }
 window.refresh_map = refresh_map;
 // The Line above makes it global
+
+// remove plotly bar
+document.getElementsByClassName("modebar modebar--hover ease-bg")[0].style.display = "none"

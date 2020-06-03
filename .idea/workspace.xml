@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8e535ea2-eeb0-4b97-910c-e0cb042c0ccb" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static_assets/resources/js/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/static_assets/resources/js/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static_assets/resources/js/file_manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/static_assets/resources/js/file_manager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clustered_viz/templates/home/map.html" beforeDir="false" afterPath="$PROJECT_DIR$/clustered_viz/templates/home/map.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static_assets/resources/js/home/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/static_assets/resources/js/home/map.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static_assets/resources/js/map_manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/static_assets/resources/js/map_manager.js" afterDir="false" />
     </list>
@@ -23,26 +22,38 @@
       <file leaf-file-name="map.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/clustered_viz/templates/home/map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="78" selection-start-line="18" selection-start-column="78" selection-end-line="18" selection-end-column="78" />
+            <state relative-caret-position="484">
+              <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="map.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/clustered_viz/templates/home/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="map.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static_assets/resources/js/home/map.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+            <state relative-caret-position="481">
+              <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="map_manager.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="map_manager.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static_assets/resources/js/map_manager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="49" column="28" lean-forward="true" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+            <state relative-caret-position="374">
+              <caret line="54" selection-start-line="54" selection-end-line="54" />
             </state>
           </provider>
         </entry>
@@ -127,16 +138,16 @@
         <option value="$PROJECT_DIR$/clustered_viz/templates/home/cards.html" />
         <option value="$PROJECT_DIR$/clustered_viz/templates/home/table.html" />
         <option value="$PROJECT_DIR$/clustered_viz/templates/base.html" />
-        <option value="$PROJECT_DIR$/clustered_viz/templates/home/index.html" />
         <option value="$PROJECT_DIR$/static_assets/resources/js/home/sample_data.js" />
         <option value="$PROJECT_DIR$/static_assets/resources/js/sample_data.js" />
         <option value="$PROJECT_DIR$/static_assets/resources/js/home/index.js" />
         <option value="$PROJECT_DIR$/static_assets/resources/js/home/map_manager.js" />
-        <option value="$PROJECT_DIR$/clustered_viz/templates/home/map.html" />
         <option value="$PROJECT_DIR$/static_assets/resources/js/constants.js" />
         <option value="$PROJECT_DIR$/static_assets/resources/js/file_manager.js" />
-        <option value="$PROJECT_DIR$/static_assets/resources/js/home/map.js" />
+        <option value="$PROJECT_DIR$/clustered_viz/templates/home/index.html" />
+        <option value="$PROJECT_DIR$/clustered_viz/templates/home/map.html" />
         <option value="$PROJECT_DIR$/static_assets/resources/js/map_manager.js" />
+        <option value="$PROJECT_DIR$/static_assets/resources/js/home/map.js" />
       </list>
     </option>
   </component>
@@ -168,6 +179,24 @@
             <path>
               <item name="clustered_viz" type="b2602c69:ProjectViewProjectNode" />
               <item name="clustered_viz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="clustered_viz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="clustered_viz" type="462c0819:PsiDirectoryNode" />
+              <item name="clustered_viz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="clustered_viz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="clustered_viz" type="462c0819:PsiDirectoryNode" />
+              <item name="clustered_viz" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="clustered_viz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="clustered_viz" type="462c0819:PsiDirectoryNode" />
+              <item name="clustered_viz" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -352,7 +381,28 @@
       <option name="project" value="LOCAL" />
       <updated>1591097848997</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="put control over map refresh v2">
+      <created>1591181750481</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1591181750482</updated>
+    </task>
+    <task id="LOCAL-00018" summary="put control over map refresh v22">
+      <created>1591182027751</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1591182027751</updated>
+    </task>
+    <task id="LOCAL-00019" summary="put control over map refresh v223">
+      <created>1591183848128</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1591183848128</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TodoView">
@@ -369,12 +419,12 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="14" weight="0.32900432" />
-      <window_info anchor="bottom" id="Event Log" order="21" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="21" sideWeight="0.50053304" side_tool="true" visible="true" weight="0.32900432" />
       <window_info anchor="bottom" id="Database Changes" order="20" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="19" weight="0.2099567" />
-      <window_info anchor="bottom" id="Python Console" order="23" weight="0.32900432" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="19" sideWeight="0.49946696" visible="true" weight="0.32900432" />
+      <window_info anchor="bottom" id="Python Console" order="23" sideWeight="0.49946696" weight="0.32900432" />
       <window_info anchor="bottom" id="Run" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="22" visible="true" weight="0.18614718" />
+      <window_info anchor="bottom" id="Terminal" order="22" weight="0.18614718" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10554371" />
       <window_info anchor="bottom" id="Docker" order="18" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="6" />
@@ -460,7 +510,10 @@
     <MESSAGE value=" sss push coreui assets2 33" />
     <MESSAGE value="fix label of map" />
     <MESSAGE value="put control over map refresh" />
-    <option name="LAST_COMMIT_MESSAGE" value="put control over map refresh" />
+    <MESSAGE value="put control over map refresh v2" />
+    <MESSAGE value="put control over map refresh v22" />
+    <MESSAGE value="put control over map refresh v223" />
+    <option name="LAST_COMMIT_MESSAGE" value="put control over map refresh v223" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/clustered_viz/settings.py">
@@ -481,6 +534,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+          <folding>
+            <element signature="e#637#669#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -521,6 +577,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding>
+            <element signature="e#637#669#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -666,6 +725,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="21" column="15" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+          <folding>
+            <element signature="e#637#669#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -718,13 +780,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/clustered_viz/templates/home/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/heroku_commands.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
@@ -746,20 +801,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="635">
           <caret line="112" column="50" selection-start-line="112" selection-start-column="50" selection-end-line="112" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clustered_viz/templates/home/map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="78" selection-start-line="18" selection-start-column="78" selection-end-line="18" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static_assets/resources/js/constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2530">
-          <caret line="20" column="32" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="32" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -770,17 +814,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static_assets/resources/js/home/map.js">
+    <entry file="file://$PROJECT_DIR$/static_assets/resources/js/constants.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+        <state relative-caret-position="-2530">
+          <caret line="20" column="32" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clustered_viz/templates/home/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clustered_viz/templates/home/map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static_assets/resources/js/map_manager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="49" column="28" lean-forward="true" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+        <state relative-caret-position="374">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static_assets/resources/js/home/map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
         </state>
       </provider>
     </entry>

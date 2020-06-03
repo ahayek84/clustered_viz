@@ -14,10 +14,12 @@ export default class MapManager {
         ]
         this.lang = 'en'
         this.data = []
+        var clientHeight = document.getElementById('WmyDiv').clientHeight;
+        console.log(clientHeight)
         this.layout = {
             mapbox: {style: this.fm.get_style_map(this.lang), center: {lon: 35.208116, lat: 31.814685}, zoom: 7.5},
             // width: 600,
-            //height: 1000,
+            height: clientHeight,
             margin: {t: 0, b: 0}
         }
         this.options = {
@@ -50,6 +52,7 @@ export default class MapManager {
             showscale: false
         })
         Plotly.newPlot("myDiv", this.data, this.layout, this.options);
+
     }
 
     refresh_map() {
