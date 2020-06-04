@@ -47,7 +47,8 @@ export default class DataManager {
             var dataObj = jsonData[eachItem];
             tableBody += "<td> <div>" + dataObj['ly_name'] + "</div> </td>";
             tableBody += "<td> <div>" + dataObj['ly_label'] + "</div> </td>";
-            tableBody += "<td> <div>" + this.populate_inner_table(dataObj['ly_parts'],dataObj['ly_values']) + "</div> </td>";
+            tableBody += "<td> <div>" +'<button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal" onclick="showModal(this)">Show Data</button>'+ "</div> </td>";
+            //tableBody += "<td> <div>" + this.populate_inner_table(dataObj['ly_parts'],dataObj['ly_values']) + "</div> </td>";
             tableBody += "<td> <div>" + '<input type="color" id="html5colorpicker" onchange="clickColor(0, -1, -1, 5)" value="#ff0000" style="width:25%;">'+ "</div> </td>";
             tableBody += "<td> <div>" + '<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">' + "</div> </td>";
             tableBody += "</tr>";
@@ -58,9 +59,27 @@ export default class DataManager {
         document.getElementById(tableId).innerHTML = tableHTML;
     }
 
-    populate_inner_table(ly_parts,ly_values){
+    populate_modal_table(row_id){
         // change the ly_parts and ly_values into table
-       return ''
+       var dat = this.get_data_row(row_id)
+       var html = ''
+        if (dat != -1){
+           // create hTML elements for Modal
+           // abed
+           console.log(dat)
+        }
+       return 'ID = ' + row_id
+    }
+
+    get_data_row(id){
+        var jsonData = this.data
+        for (var eachItem in jsonData) {
+            var dataObj = jsonData[eachItem];
+            if (dataObj['id'] == id){
+                return dataObj
+            }
+        }
+        return -1
     }
 
 }
