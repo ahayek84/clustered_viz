@@ -21,9 +21,9 @@ export default class DataManager {
         var data = this.fm.getDataJSON()
         var jsonData = data
         for (var eachItem in jsonData) {
-             var dataObj = jsonData[eachItem];
-             dataObj["ly_name"] = this.fm.get_geo_names([dataObj["ly_id"]], 'en')[0]
-             dataObj["ly_parts_names"] = this.fm.get_geo_names(dataObj["ly_parts"], this.lang)
+            var dataObj = jsonData[eachItem];
+            dataObj["ly_name"] = this.fm.get_geo_names([dataObj["ly_id"]], 'en')[0]
+            dataObj["ly_parts_names"] = this.fm.get_geo_names(dataObj["ly_parts"], this.lang)
         }
         return jsonData
     }
@@ -47,9 +47,9 @@ export default class DataManager {
             var dataObj = jsonData[eachItem];
             tableBody += "<td> <div>" + dataObj['ly_name'] + "</div> </td>";
             tableBody += "<td> <div>" + dataObj['ly_label'] + "</div> </td>";
-            tableBody += "<td> <div>" +'<button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal" onclick="showModal(this)">Show Data</button>'+ "</div> </td>";
+            tableBody += "<td> <div>" + '<button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal" onclick="showModal(this)">Show Data</button>' + "</div> </td>";
             //tableBody += "<td> <div>" + this.populate_inner_table(dataObj['ly_parts'],dataObj['ly_values']) + "</div> </td>";
-            tableBody += "<td> <div>" + '<input type="color" id="html5colorpicker" onchange="clickColor(0, -1, -1, 5)" value="#ff0000" style="width:25%;">'+ "</div> </td>";
+            tableBody += "<td> <div>" + '<input type="color" id="html5colorpicker" onchange="clickColor(0, -1, -1, 5)" value="#ff0000" style="width:25%;">' + "</div> </td>";
             tableBody += "<td> <div>" + '<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">' + "</div> </td>";
             tableBody += "</tr>";
         }
@@ -59,23 +59,47 @@ export default class DataManager {
         document.getElementById(tableId).innerHTML = tableHTML;
     }
 
-    populate_modal_table(row_id){
-        // change the ly_parts and ly_values into table
-       var dat = this.get_data_row(row_id)
-       var html = ''
-        if (dat != -1){
-           // create hTML elements for Modal
-           // abed
-           console.log(dat)
-        }
-       return 'ID = ' + row_id
+    zip(arrays) {
+        return arrays[0].map(function (_, i) {
+            return arrays.map(function (array) {
+                return array[i]
+            })
+        });
     }
 
-    get_data_row(id){
+    populate_modal_table(row_id) {
+        // change the ly_parts and ly_values into table
+        var tableHead = '<thead>\n' +
+            '<tr>\n' +
+            '<th>Name</th>\n' +
+            '<th>Value</th>\n' +
+            '</tr>\n' +
+            '</thead>'
+        var tableBody = ' <tbody>\n'
+        var dat = this.get_data_row(row_id)
+        var html = ''
+        if (dat != -1) {
+            // create hTML elements for Modal
+            var jsonData = this.zip([dat['ly_parts_names'], dat['ly_values']])
+            for (var eachItem in jsonData) {
+                var itemparts = jsonData[eachItem]
+                tableBody += "<tr>";
+                for (var part in itemparts) {
+                    tableBody += "<td> <div>" + itemparts[part] + "</div> </td>";
+                }
+                tableBody += "</tr>";
+            }
+        }
+        tableBody = tableBody + '</tbody>\n';
+        var tableHTML = tableHead + tableBody
+        return tableHTML
+    }
+
+    get_data_row(id) {
         var jsonData = this.data
         for (var eachItem in jsonData) {
             var dataObj = jsonData[eachItem];
-            if (dataObj['id'] == id){
+            if (dataObj['id'] == id) {
                 return dataObj
             }
         }
@@ -83,4 +107,3 @@ export default class DataManager {
     }
 
 }
-
