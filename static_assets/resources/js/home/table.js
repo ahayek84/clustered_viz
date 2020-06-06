@@ -13,6 +13,15 @@ window.showModal = showModal;
 // The Line above makes it global
 
 
+function viz(checkbox) {
+    var idx = getRowIndex( checkbox );
+    var ly_color = document.getElementById('colr_' + idx).value
+    data_m.visulize_data_on_map(idx,ly_color,checkbox.checked)
+}
+window.viz = viz;
+// The Line above makes it global
+
+
 function getRowIndex( el ) {
     while( (el = el.parentNode) && el.nodeName.toLowerCase() !== 'tr' );
 

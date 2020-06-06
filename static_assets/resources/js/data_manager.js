@@ -1,5 +1,7 @@
 import Constants from "./constants.js";
 import FileManager from './file_manager.js';
+import MapManager from './map_manager.js';
+
 
 export default class DataManager {
     constructor() {
@@ -7,6 +9,7 @@ export default class DataManager {
         this.con = new Constants()
         this.fm = new FileManager()
         this.data = this.get_data_file_content()
+        this.map = new MapManager()
     }
 
     /// it has to be added as directive
@@ -43,14 +46,15 @@ export default class DataManager {
         // build the body
         var jsonData = this.data
         for (var eachItem in jsonData) {
+            var row_id = parseInt(eachItem, 10) + 1;
             tableBody += "<tr>";
             var dataObj = jsonData[eachItem];
             tableBody += "<td> <div>" + dataObj['ly_name'] + "</div> </td>";
             tableBody += "<td> <div>" + dataObj['ly_label'] + "</div> </td>";
             tableBody += "<td> <div>" + '<button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal" onclick="showModal(this)">Show Data</button>' + "</div> </td>";
             //tableBody += "<td> <div>" + this.populate_inner_table(dataObj['ly_parts'],dataObj['ly_values']) + "</div> </td>";
-            tableBody += "<td> <div>" + '<input type="color" id="html5colorpicker" onchange="clickColor(0, -1, -1, 5)" value="#ff0000" style="width:25%;">' + "</div> </td>";
-            tableBody += "<td> <div>" + '<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">' + "</div> </td>";
+            tableBody += "<td> <div>" + '<input type="color" id="colr_' + row_id + '" onchange="clickColor(0, -1, -1, 5)" value="#ff0000" style="width:25%;">' + "</div> </td>";
+            tableBody += "<td> <div>" + '<input type="checkbox" id="chk_' + row_id + '" name="vehicle1" onchange="viz(this)">' + "</div> </td>";
             tableBody += "</tr>";
         }
         //
@@ -65,6 +69,20 @@ export default class DataManager {
                 return array[i]
             })
         });
+    }
+
+
+    // add data
+    visulize_data_on_map(row_id, ly_color, show_flag) {
+        var dat = this.get_data_row(row_id)
+        if (dat != -1) {
+            if (show_flag) {
+                this.map.add_layer(dat['ly_id'],dat['ly_label'],ly_color,dat['ly_type'],dat['ly_parts'],dat['ly_values'])
+                console.log('viz on map')
+            } else {
+                console.log('off viz on map')
+            }
+        }
     }
 
     populate_modal_table(row_id) {
