@@ -40,6 +40,7 @@ export default class MapManager {
         var geo_name_en = this.fm.get_geo_names(this.geo_id, this.lang)
         var geo_json_map = this.fm.get_geojson_map(this.lang)
         this.data.push({
+            row_id: 0,
             type: "choroplethmapbox",
             name: "Palestine",
             geojson: this.fm.getFileJSON(geo_json_map),
@@ -55,11 +56,43 @@ export default class MapManager {
 
     }
 
+    re_init_map() {
+        var geo_name_en = this.fm.get_geo_names(this.geo_id, this.lang)
+        var geo_json_map = this.fm.get_geojson_map(this.lang)
+        this.data.push({
+            row_id: 0,
+            type: "choroplethmapbox",
+            name: "Palestine",
+            geojson: this.fm.getFileJSON(geo_json_map),
+            locations: geo_name_en,
+            z: [null, null, null, null, null, null, null, null, null,
+                null, null, null, null, null, null, null],
+            zmin: 25,
+            zmax: 280,
+            showlegend: false,
+            showscale: false
+        })
+    }
+
     refresh_map() {
         Plotly.react("myDiv", this.data, this.layout);
     }
 
-    add_layer(ly_id, ly_label, ly_color, ly_type, ly_parts, zvalues) {
+    remove_layer(row_id) {
+        var jsonData = this.data
+        for (var eachItem in jsonData) {
+            var dataObj = jsonData[eachItem];
+            if (dataObj['row_id'] == row_id) {
+                this.data.splice(eachItem, 1)
+            }
+        }
+        if (this.data.length == 0){
+            this.re_init_map()
+        }
+        this.refresh_map()
+    }
+
+    add_layer(rw_id, ly_id, ly_label, ly_color, ly_type, ly_parts, zvalues) {
         /*
         * ly_type : 1 for geos , 2 for localities
         * */
@@ -70,6 +103,7 @@ export default class MapManager {
         var geo_locals_names = this.fm.get_names(ly_type, ly_parts, this.lang)
         this.data.push(
             {
+                row_id: rw_id,
                 type: "choroplethmapbox",
                 autocolorscale: false,
                 colorscale: [[0, 'rgb(255,255,255)'], [1, ly_color]],

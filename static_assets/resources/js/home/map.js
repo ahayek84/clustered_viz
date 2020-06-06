@@ -14,7 +14,7 @@ function refresh_map() {
     var ly_type = 1 // Palestine
     var ly_label = ''
     var ly_color = 'rgb(255,0,0)'
-    map.add_layer(ly_id,ly_label,ly_color,ly_type,ly_parts,ly_values)
+    map.add_layer(1,ly_id,ly_label,ly_color,ly_type,ly_parts,ly_values)
 
     var ly_id = 1345
     var ly_parts = [
@@ -24,7 +24,7 @@ function refresh_map() {
     var ly_type = 2 // localities
     var ly_label = 'Econmics'
     var ly_color = 'rgb(0,0,255)'
-    map.add_layer(ly_id,ly_label,ly_color,ly_type,ly_parts,ly_values)
+    map.add_layer(2,ly_id,ly_label,ly_color,ly_type,ly_parts,ly_values)
 }
 window.refresh_map = refresh_map;
 // The Line above makes it global

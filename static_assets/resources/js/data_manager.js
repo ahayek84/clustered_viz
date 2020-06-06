@@ -77,9 +77,10 @@ export default class DataManager {
         var dat = this.get_data_row(row_id)
         if (dat != -1) {
             if (show_flag) {
-                this.map.add_layer(dat['ly_id'],dat['ly_label'],ly_color,dat['ly_type'],dat['ly_parts'],dat['ly_values'])
+                this.map.add_layer(row_id,dat['ly_id'],dat['ly_label'],ly_color,dat['ly_type'],dat['ly_parts'],dat['ly_values'])
                 console.log('viz on map')
             } else {
+                this.map.remove_layer(row_id)
                 console.log('off viz on map')
             }
         }
