@@ -26,7 +26,7 @@ export default class DataManager {
         for (var eachItem in jsonData) {
             var dataObj = jsonData[eachItem];
             dataObj["ly_name"] = this.fm.get_geo_names([dataObj["ly_id"]], 'en')[0]
-            dataObj["ly_parts_names"] = this.fm.get_geo_names(dataObj["ly_parts"], this.lang)
+            dataObj["ly_parts_names"] = this.fm.get_names(dataObj["ly_type"], dataObj["ly_parts"], this.lang)
         }
         return jsonData
     }
@@ -78,7 +78,6 @@ export default class DataManager {
         if (dat != -1) {
             if (show_flag) {
                 this.map.add_layer(row_id,dat['ly_id'],dat['ly_label'],ly_color,dat['ly_type'],dat['ly_parts'],dat['ly_values'])
-                console.log('viz on map')
             } else {
                 this.map.remove_layer(row_id)
                 console.log('off viz on map')

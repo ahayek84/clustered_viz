@@ -18,9 +18,9 @@ function refresh_map() {
 
     var ly_id = 1345
     var ly_parts = [
-            13452170, 13452175, 13452180, 13452185, 13452190, 13452195, 13452200, 13452360, 13452660
+            13452415
         ]
-    var ly_values = [1041, 1040, 1055, 1047, 1032, 1046, 1501, 1000, 500]
+    var ly_values = [1041]
     var ly_type = 2 // localities
     var ly_label = 'Econmics'
     var ly_color = 'rgb(0,0,255)'

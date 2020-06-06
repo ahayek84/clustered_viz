@@ -83,7 +83,7 @@ export default class Constants {
             13452170: "Al Walaja",
             13452175: "Battir",
             13452180: "Al 'Ubeidiya",
-            13452185: "'Ayda Camp",
+            13452185: "Ayda Camp",
             13452190: "Khallet an Nu'man",
             13452195: "Al 'Aza Camp",
             13452200: "Al Khas",
@@ -123,14 +123,14 @@ export default class Constants {
             13452475: "Al Halqum",
             13452480: "Umm Salamuna",
             13452490: "Al Manshiya",
-            13452495: "Tuqu'",
+            13452495: "Tuqu",
             13452500: "Marah Rabah",
             13452510: "Wadi  Immhamid",
-            13452520: "Khirbet Tuqu'",
+            13452520: "Khirbet Tuqu",
             13452525: "Beit Fajjar",
             13452535: "Al Maniya",
             13452565: "Kisan",
-            13452660: "'Arab ar Rashayida"
+            13452660: "Arab ar Rashayida"
         };
 
         var geo_codes_ar = {

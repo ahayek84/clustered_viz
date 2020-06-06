@@ -36,6 +36,13 @@ export default class MapManager {
         console.log('haha')
     }
 
+    change_focus(vlon, vlat, vzoom) {
+        this.layout.mapbox.center.lon = vlon
+        this.layout.mapbox.center.lat = vlat
+        this.layout.mapbox.zoom = vzoom
+        this.refresh_map()
+    }
+
     init_map() {
         var geo_name_en = this.fm.get_geo_names(this.geo_id, this.lang)
         var geo_json_map = this.fm.get_geojson_map(this.lang)
@@ -86,7 +93,7 @@ export default class MapManager {
                 this.data.splice(eachItem, 1)
             }
         }
-        if (this.data.length == 0){
+        if (this.data.length == 0) {
             this.re_init_map()
         }
         this.refresh_map()
@@ -101,6 +108,13 @@ export default class MapManager {
         var ly_name = this.fm.get_geo_names([ly_id], this.lang)[0]
         var geo_json_map = this.fm.get_geojson_layer(ly_id, this.lang)
         var geo_locals_names = this.fm.get_names(ly_type, ly_parts, this.lang)
+        console.log(rw_id)
+        console.log(ly_color)
+        console.log(vzmin)
+        console.log(vzmax)
+        console.log(ly_name)
+        console.log(geo_json_map)
+        console.log(geo_locals_names)
         this.data.push(
             {
                 row_id: rw_id,
