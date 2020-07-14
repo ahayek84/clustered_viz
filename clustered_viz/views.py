@@ -6,3 +6,6 @@ from django.contrib import messages
 
 def home(request):
     return render(request, 'home/index.html', {})
+
+def graph(request):
+    return render(request, 'graph_scroller/index.html', {})
