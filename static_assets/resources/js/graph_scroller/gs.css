@@ -1,4 +1,4 @@
-body{
+.conbody{
   max-width: 900px;
   margin: 0px auto;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -81,6 +81,6 @@ circle{
   font-family: monospace;
 }
 
-svg{
+.rectsvg{
   background-color: yellow;
 }

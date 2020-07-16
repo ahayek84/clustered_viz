@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e535ea2-eeb0-4b97-910c-e0cb042c0ccb" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/static_assets/resources/js/d3v4+jetpack.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static_assets/resources/js/graph-scroll.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static_assets/resources/js/graph_scroller/gs.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clustered_viz/templates/graph_scroller/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/clustered_viz/templates/graph_scroller/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static_assets/resources/js/graph_scroller/gs.css" beforeDir="false" afterPath="$PROJECT_DIR$/static_assets/resources/js/graph_scroller/gs.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -50,60 +48,26 @@
       <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/clustered_viz/templates/header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
+            <state relative-caret-position="1408">
               <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/clustered_viz/templates/graph_scroller/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-              <folding>
-                <element signature="e#1502#1506#0#HTML" expanded="true" />
-                <element signature="e#1508#1512#0#HTML" expanded="true" />
-                <element signature="e#1522#1526#0#HTML" expanded="true" />
-                <element signature="e#1530#1534#0#HTML" expanded="true" />
-                <element signature="e#1535#1539#0#HTML" expanded="true" />
-                <element signature="e#1557#1561#0#HTML" expanded="true" />
-                <element signature="e#1564#1568#0#HTML" expanded="true" />
-                <element signature="e#1582#1586#0#HTML" expanded="true" />
-                <element signature="e#1586#1590#0#HTML" expanded="true" />
-                <element signature="e#1594#1598#0#HTML" expanded="true" />
-                <element signature="e#1601#1605#0#HTML" expanded="true" />
-                <element signature="e#1622#1626#0#HTML" expanded="true" />
-                <element signature="e#1631#1635#0#HTML" expanded="true" />
-                <element signature="e#1638#1642#0#HTML" expanded="true" />
-                <element signature="e#1651#1655#0#HTML" expanded="true" />
-                <element signature="e#1659#1663#0#HTML" expanded="true" />
-                <element signature="e#1668#1672#0#HTML" expanded="true" />
-                <element signature="e#1675#1679#0#HTML" expanded="true" />
-                <element signature="e#1688#1692#0#HTML" expanded="true" />
-                <element signature="e#1696#1700#0#HTML" expanded="true" />
-                <element signature="e#1705#1709#0#HTML" expanded="true" />
-                <element signature="e#1712#1716#0#HTML" expanded="true" />
-                <element signature="e#1725#1729#0#HTML" expanded="true" />
-                <element signature="e#1733#1737#0#HTML" expanded="true" />
-                <element signature="e#1740#1744#0#HTML" expanded="true" />
-                <element signature="e#1748#1752#0#HTML" expanded="true" />
-                <element signature="e#1753#1757#0#HTML" expanded="true" />
-                <element signature="e#1761#1765#0#HTML" expanded="true" />
-                <element signature="e#1766#1770#0#HTML" expanded="true" />
-                <element signature="e#1772#1776#0#HTML" expanded="true" />
-                <element signature="e#1782#1786#0#HTML" expanded="true" />
-                <element signature="e#1789#1793#0#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="314">
+              <caret line="180" column="51" selection-start-line="180" selection-start-column="51" selection-end-line="180" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gs.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="gs.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static_assets/resources/js/graph_scroller/gs.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-924">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="432">
+              <caret line="83" column="9" lean-forward="true" selection-start-line="83" selection-start-column="9" selection-end-line="83" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -112,7 +76,7 @@
         <entry file="file://$PROJECT_DIR$/clustered_viz/templates/home/map.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="572">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="32" />
+              <caret line="26" selection-start-line="26" selection-end-line="32" />
             </state>
           </provider>
         </entry>
@@ -148,11 +112,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>September 2019</find>
-      <find>assets/img/avatars/6.jpg</find>
-      <find>avatars/1.jpg</find>
-      <find>static</find>
-      <find>foother</find>
       <find>foot</find>
       <find>BASE_DIR</find>
       <find>coreui/</find>
@@ -178,6 +137,11 @@
       <find>graph1</find>
       <find>innerWidth</find>
       <find>#eee</find>
+      <find>container-1</find>
+      <find>source</find>
+      <find>innerHeight</find>
+      <find>sections</find>
+      <find>docu</find>
     </findStrings>
     <replaceStrings>
       <replace>graph</replace>
@@ -222,9 +186,9 @@
         <option value="$PROJECT_DIR$/clustered_viz/views.py" />
         <option value="$PROJECT_DIR$/clustered_viz/urls.py" />
         <option value="$PROJECT_DIR$/clustered_viz/templates/header.html" />
-        <option value="$PROJECT_DIR$/static_assets/resources/js/graph_scroller/gs.css" />
         <option value="$PROJECT_DIR$/clustered_viz/templates/base.html" />
         <option value="$PROJECT_DIR$/clustered_viz/templates/graph_scroller/index.html" />
+        <option value="$PROJECT_DIR$/static_assets/resources/js/graph_scroller/gs.css" />
       </list>
     </option>
   </component>
@@ -590,7 +554,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594727519182</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="viz model v4">
+      <created>1594818975560</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1594818975560</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TodoView">
@@ -604,18 +575,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="14" weight="0.32900432" />
-      <window_info anchor="bottom" id="Event Log" order="21" sideWeight="0.50586355" side_tool="true" visible="true" weight="0.2391775" />
+      <window_info anchor="bottom" id="Event Log" order="21" sideWeight="0.5090618" side_tool="true" visible="true" weight="0.26298702" />
       <window_info anchor="bottom" id="Database Changes" order="20" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="19" sideWeight="0.49413645" visible="true" weight="0.2391775" />
+      <window_info anchor="bottom" id="Version Control" order="19" sideWeight="0.4936034" weight="0.2391775" />
       <window_info anchor="bottom" id="Python Console" order="23" sideWeight="0.49946696" weight="0.32900432" />
       <window_info anchor="bottom" id="Run" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="22" sideWeight="0.4914712" weight="0.26298702" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18443497" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="22" sideWeight="0.49093816" visible="true" weight="0.26298702" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18656716" />
       <window_info anchor="bottom" id="Docker" order="18" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="bottom" id="Find" order="5" />
       <window_info anchor="right" id="SciView" order="5" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -627,30 +598,31 @@
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="5" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21055438" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.26406926" />
       <window_info anchor="bottom" id="Run" order="3" />
+      <window_info anchor="bottom" id="Python Console" order="13" weight="0.32900432" />
       <window_info anchor="bottom" id="Find" order="2" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.29220778" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.26406926" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Messages" order="0" />
-      <window_info anchor="bottom" id="Python Console" order="13" weight="0.32900432" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -975,7 +947,7 @@
     <entry file="file://$PROJECT_DIR$/clustered_viz/templates/home/map.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="32" />
+          <caret line="26" selection-start-line="26" selection-end-line="32" />
         </state>
       </provider>
     </entry>
@@ -988,7 +960,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/clustered_viz/templates/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
+        <state relative-caret-position="1408">
           <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
         </state>
       </provider>
@@ -1000,51 +972,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static_assets/resources/js/graph_scroller/gs.css">
+    <entry file="file://$PROJECT_DIR$/clustered_viz/templates/graph_scroller/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-924">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="314">
+          <caret line="180" column="51" selection-start-line="180" selection-start-column="51" selection-end-line="180" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/clustered_viz/templates/graph_scroller/index.html">
+    <entry file="file://$PROJECT_DIR$/static_assets/resources/js/graph_scroller/gs.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-          <folding>
-            <element signature="e#1502#1506#0#HTML" expanded="true" />
-            <element signature="e#1508#1512#0#HTML" expanded="true" />
-            <element signature="e#1522#1526#0#HTML" expanded="true" />
-            <element signature="e#1530#1534#0#HTML" expanded="true" />
-            <element signature="e#1535#1539#0#HTML" expanded="true" />
-            <element signature="e#1557#1561#0#HTML" expanded="true" />
-            <element signature="e#1564#1568#0#HTML" expanded="true" />
-            <element signature="e#1582#1586#0#HTML" expanded="true" />
-            <element signature="e#1586#1590#0#HTML" expanded="true" />
-            <element signature="e#1594#1598#0#HTML" expanded="true" />
-            <element signature="e#1601#1605#0#HTML" expanded="true" />
-            <element signature="e#1622#1626#0#HTML" expanded="true" />
-            <element signature="e#1631#1635#0#HTML" expanded="true" />
-            <element signature="e#1638#1642#0#HTML" expanded="true" />
-            <element signature="e#1651#1655#0#HTML" expanded="true" />
-            <element signature="e#1659#1663#0#HTML" expanded="true" />
-            <element signature="e#1668#1672#0#HTML" expanded="true" />
-            <element signature="e#1675#1679#0#HTML" expanded="true" />
-            <element signature="e#1688#1692#0#HTML" expanded="true" />
-            <element signature="e#1696#1700#0#HTML" expanded="true" />
-            <element signature="e#1705#1709#0#HTML" expanded="true" />
-            <element signature="e#1712#1716#0#HTML" expanded="true" />
-            <element signature="e#1725#1729#0#HTML" expanded="true" />
-            <element signature="e#1733#1737#0#HTML" expanded="true" />
-            <element signature="e#1740#1744#0#HTML" expanded="true" />
-            <element signature="e#1748#1752#0#HTML" expanded="true" />
-            <element signature="e#1753#1757#0#HTML" expanded="true" />
-            <element signature="e#1761#1765#0#HTML" expanded="true" />
-            <element signature="e#1766#1770#0#HTML" expanded="true" />
-            <element signature="e#1772#1776#0#HTML" expanded="true" />
-            <element signature="e#1782#1786#0#HTML" expanded="true" />
-            <element signature="e#1789#1793#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="432">
+          <caret line="83" column="9" lean-forward="true" selection-start-line="83" selection-start-column="9" selection-end-line="83" selection-end-column="9" />
         </state>
       </provider>
     </entry>
