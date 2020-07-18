@@ -133,7 +133,10 @@
 {% load static %}
 {% block scripts %}
     <script type="text/javascript" src="{% static 'resources\js\d3v4+jetpack.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
     <script type="text/javascript" src="{% static 'resources\js\graph-scroll.js' %}"></script>
+    <script type="text/javascript" src="{% static 'resources\js\graph_scroller\barchart.js' %}"></script>
+
     <script>
         var oldWidth = 0
 
@@ -147,44 +150,17 @@
             return {cx: lx, cy: ly};
         }
 
-        function placeRect(x_pos, y_pos) {
-            var d = document.getElementById('rect');
-            d.style.position = "absolute";
-            d.style.left = x_pos + 'px';
-            d.style.top = y_pos + 'px';
-        }
-
         function render() {
-            console.log('-------------render -------------')
-            console.log('innerWidth = ' + innerWidth)
             if (oldWidth == innerWidth) return
             oldWidth = innerWidth
             var width = d3.select('#graph').node().offsetWidth
             var height = width
-
-            console.log('graph offsetWidth = ' + width)
-            console.log('r = ' + 40)
 
             var r = 40 // Radius ( 0.5 Diameter )
             if (innerWidth <= 925) {
                 width = innerWidth
                 height = innerHeight * .7
             }
-
-            console.log('width = ' + width)
-            console.log('height = ' + height)
-
-            // return console.log(width, height)
-            // add rectangle
-            var svg = d3.select('#graph').html('')
-                .append('svg')
-                .attrs({id: 'rect',class:'rectsvg', style: "position: absolute;top:0px", width: width, height: height})
-            // add circle
-            var circle = svg.append('circle')
-                .attrs({cx: 0, cy: 0, r: r})
-            // colors
-            var colors = ['orange', 'purple', 'steelblue', 'pink', 'black']
-
 
             var gs = d3.graphScroll()
                 .container(d3.select('.container-1'))
@@ -193,28 +169,19 @@
                 .sections(d3.selectAll('.container-1 #sections > div'))
                 // .offset(innerWidth < 900 ? innerHeight - 30 : 200)
                 .on('active', function (i) {
-                    var pos = [{cx: width - r, cy: r},
-                        {cx: r, cy: r},
-                        {cx: width - r, cy: height - r},
-                        {cx: width / 2, cy: height / 2}][i]
                     var pos2 = getPos(document.getElementById('sec' + i))
-
+                    update(i)
                     if (i == 0) {
-                        svg.transition().duration(1000)
+                        d3.select("#rect").transition().duration(1000)
                             .attrs({style: 'position: absolute' + ';top:' + 0 + 'px'})
                     }
                     else {
-                        svg.transition().duration(1000)
+                        d3.select("#rect").transition().duration(1000)
                             .attrs({style: 'position: absolute' + ';top:' + pos2.cy / 9 + 'px'})
                     }
-
-                    circle.transition().duration(1000)
-                        .attrs(pos)
-                        .transition()
-                        .style('fill', colors[i])
                 })
-            {#d3.select('#source')#}
-            {#    .styles({'margin-bottom': window.innerHeight - 450 + 'px', padding: '100px'})#}
+            d3.select('#source')
+                .styles({'margin-bottom': window.innerHeight - 450 + 'px', padding: '100px'})
         }
 
         render()
