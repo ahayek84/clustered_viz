@@ -59,7 +59,7 @@ function readTextFile(file) {
 }
 
 function getFileJSON(file) {
-    var text = readTextFile('http://' + getURL() + "/static/resources/js/" + file)
+    var text = readTextFile(window.location.origin + "/static/resources/js/" + file)
     var data = ''
     if (text == null) {
         data = {features: []}
