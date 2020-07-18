@@ -1,0 +1,74 @@
+{
+"data0" : [
+  {
+      "group": "Palestine",
+      "value": 12394
+  },
+  {
+      "group": "Russia",
+      "value": 6148
+  },
+  {
+      "group": "Germany (FRG)",
+      "value": 1653
+  },
+  {
+      "group": "France",
+      "value": 2162
+  }
+],
+"data1" : [
+  {
+      "group": "Gaza",
+      "value": 520
+  },
+  {
+      "group": "Ramallah",
+      "value": 1000
+  },
+  {
+      "group": "Hebron",
+      "value": 200
+  },
+  {
+      "group": "Jercho",
+      "value": 162
+  }
+],
+"data2" : [
+  {
+      "group": "North Gaza",
+      "value": 20
+  },
+  {
+      "group": "Rafah",
+      "value": 30
+  },
+  {
+      "group": "Khan Yunus",
+      "value": 50
+  },
+  {
+      "group": "Gaza city",
+      "value": 70
+  }
+],
+"data3" : [
+  {
+      "group": "Naser",
+      "value": 50
+  },
+  {
+      "group": "Tofah",
+      "value": 100
+  },
+  {
+      "group": "Glaa street",
+      "value": 200
+  },
+  {
+      "group": "The beach",
+      "value": 300
+  }
+]
+}
