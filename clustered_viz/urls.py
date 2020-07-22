@@ -22,7 +22,8 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.home,name='home'),
-    path('graph/',views.graph,name='graph')
+    path('graph/',views.graph,name='graph'),
+    path('sunburst/',views.sunburst,name='sunburst')
 ]
 
 if settings.DEBUG is True:

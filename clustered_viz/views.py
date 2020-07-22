@@ -9,3 +9,7 @@ def home(request):
 
 def graph(request):
     return render(request, 'graph_scroller/index.html', {})
+
+
+def sunburst(request):
+    return render(request, 'sunburst/index.html', {})

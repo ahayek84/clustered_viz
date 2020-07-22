@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% load static %}
+    <link href="{% static 'resources\js\sunburst\sb.css' %}" rel="stylesheet">
+    <div class="container-fluid">
+        <!--
+        Begin the work
+        -->
+        <h1>Simple scrolling events for d3 Sunburst</h1>
+
+        <div id='container' class='container-1 conbody'>
+            <div id='graph'></div>
+            <div id='sections'>
+                <div id="sec0">
+                    <h3>Connect text and graphics</h3>
+                </div>
+                <div id="sec1">
+                    <h3>Connect text and graphics</h3>
+                </div>
+                <div id="sec2">
+                    <h3>Connect text and graphics</h3>
+                </div>
+                <div id="sec3">
+                    <h3>Connect text and graphics</h3>
+                </div>
+            </div>
+        </div>
+        <!--
+        End the work
+        -->
+    </div>
+
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script type="text/javascript" src="{% static 'resources\js\sunburst\sunburst.js' %}"></script>
+{% endblock %}
