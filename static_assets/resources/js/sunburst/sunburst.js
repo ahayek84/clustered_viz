@@ -44,7 +44,7 @@ function sunburst() {
                 if (d.depth === 0) return 'white'
                 return colors(d.x0)
             })
-            .on('click', update)
+            //.on('click', update) // stop on click to on scroll abed
 
         gSlices.append('text')
             .attr('dy', '.35em')
