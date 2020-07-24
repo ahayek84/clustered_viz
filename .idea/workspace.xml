@@ -4,7 +4,6 @@
     <list default="true" id="8e535ea2-eeb0-4b97-910c-e0cb042c0ccb" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clustered_viz/templates/sunburst/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/clustered_viz/templates/sunburst/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static_assets/resources/js/sunburst/sb.css" beforeDir="false" afterPath="$PROJECT_DIR$/static_assets/resources/js/sunburst/sb.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static_assets/resources/js/sunburst/sunburst.js" beforeDir="false" afterPath="$PROJECT_DIR$/static_assets/resources/js/sunburst/sunburst.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,20 +18,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/clustered_viz/templates/sunburst/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="36" column="14" lean-forward="true" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+            <state relative-caret-position="1452">
+              <caret line="66" column="22" lean-forward="true" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sunburst.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="sunburst.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static_assets/resources/js/sunburst/sunburst.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="86" column="43" selection-start-line="86" selection-start-column="43" selection-end-line="86" selection-end-column="43" />
+            <state relative-caret-position="418">
+              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -58,8 +57,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/clustered_viz/templates/graph_scroller/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="136" column="4" lean-forward="true" selection-start-line="136" selection-start-column="4" selection-end-line="136" selection-end-column="94" />
+            <state relative-caret-position="344">
+              <caret line="186" selection-start-line="186" selection-end-line="187" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -86,9 +85,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Khallet</find>
-      <find>get_local_names</find>
-      <find>13452415</find>
       <find>get_data_row</find>
       <find>admin</find>
       <find>svg {</find>
@@ -116,6 +112,9 @@
       <find>arcTween</find>
       <find>text</find>
       <find>23</find>
+      <find>click</find>
+      <find>width</find>
+      <find>update</find>
     </findStrings>
     <replaceStrings>
       <replace>graph</replace>
@@ -592,7 +591,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595439651944</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="sunburst v4 compatible with scroller">
+      <created>1595610340526</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1595610340526</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TodoView">
@@ -713,7 +719,8 @@
     <MESSAGE value="viz model v5" />
     <MESSAGE value="fix origin" />
     <MESSAGE value="sunburst 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="sunburst 1" />
+    <MESSAGE value="sunburst v4 compatible with scroller" />
+    <option name="LAST_COMMIT_MESSAGE" value="sunburst v4 compatible with scroller" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/clustered_viz/templates/home.html" />
@@ -998,22 +1005,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/clustered_viz/templates/graph_scroller/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="136" column="4" lean-forward="true" selection-start-line="136" selection-start-column="4" selection-end-line="136" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static_assets/resources/js/sunburst/sunburst.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="86" column="43" selection-start-line="86" selection-start-column="43" selection-end-line="86" selection-end-column="43" />
+        <state relative-caret-position="344">
+          <caret line="186" selection-start-line="186" selection-end-line="187" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/clustered_viz/templates/sunburst/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="36" column="14" lean-forward="true" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+        <state relative-caret-position="1452">
+          <caret line="66" column="22" lean-forward="true" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static_assets/resources/js/sunburst/sunburst.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
         </state>
       </provider>
     </entry>
