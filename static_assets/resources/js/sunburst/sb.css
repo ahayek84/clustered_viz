@@ -88,3 +88,7 @@ h1 {
 .rectsvg{
   background-color: yellow;
 }
+
+path {
+  stroke: #fff;
+}

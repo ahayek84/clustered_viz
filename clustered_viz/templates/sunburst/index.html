@@ -1,3 +1,4 @@
+{#https://bl.ocks.org/SevenChan07/bc57f3e891512ca56f08bbea09dcbc2a#}
 {% extends 'base.html' %}
 {% block content %}
     {% load static %}
@@ -30,6 +31,7 @@
         -->
     </div>
 
-    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script type="text/javascript" src="{% static 'resources\js\d3v4+jetpack.js' %}"></script>
+    <script type="text/javascript" src="{% static 'resources\js\graph-scroll.js' %}"></script>
     <script type="text/javascript" src="{% static 'resources\js\sunburst\sunburst.js' %}"></script>
 {% endblock %}

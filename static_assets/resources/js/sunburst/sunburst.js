@@ -1,130 +1,193 @@
-    var oldWidth = 0
-        function getURL() {
-            return window.location.origin;
+var oldWidth = 0
+///////
+
+
+function getURL() {
+    return window.location.origin;
+}
+
+////////
+function render() {
+    if (oldWidth == innerWidth) return
+    oldWidth = innerWidth
+    var width = d3.select('#graph').node().offsetWidth
+    var height = width
+    if (innerWidth <= 925) {
+        width = innerWidth
+        height = innerHeight * .7
+    }
+    var radius = Math.min(width, height) / 2;
+    let node
+
+
+    const svg = d3.select('#graph')
+        .append('svg')
+        .attr('width', width)
+        .attr('height', height)
+        .append('g')
+        .attr('transform', 'translate(' + width / 2 + ',' + (height / 2) + ')')
+
+    const x = d3.scaleLinear().range([0, 2 * Math.PI])
+    const y = d3.scaleLinear().range([0, radius])
+
+    const colors = d3.scaleOrdinal(d3.schemeCategory20)
+    const partition = d3.partition()
+
+    const arc = d3.arc()
+        .startAngle(d => Math.max(0, Math.min(2 * Math.PI, x(d.x0))))
+        .endAngle(d => Math.max(0, Math.min(2 * Math.PI, x(d.x1))))
+        .innerRadius(d => Math.max(0, y(d.y0)))
+        .outerRadius(d => Math.max(0, y(d.y1)))
+
+    d3.json(getURL() + "/static/resources/js/" + "flare.json", function (error, root) {
+        if (error) return console.error(error)
+
+        const gSlices = svg.selectAll('g').data(partition(d3.hierarchy(root).sum(d => d.size)).descendants(), function (d) {
+            return d.data.id
+        }).enter().append('g')
+
+        gSlices.exit().remove()
+
+        gSlices.append('path')
+            .style('fill', function (d) {
+                if (d.depth === 0) return 'white'
+                return colors(d.x0)
+            })
+            .on('click', click)
+
+        gSlices.append('text')
+            .attr('dy', '.35em')
+            .text(function (d) {
+                return d.parent ? d.data.name : ''
+            })
+            .attr('id', function (d) {
+                return 'w' + d.data.name
+            })
+            .attr('fill', '#fff')
+
+        svg.selectAll('path')
+            .transition('update')
+            .duration(750).attrTween('d', function (d, i) {
+            return arcTweenPath(d, i)
+        })
+
+        svg.selectAll('text')
+            .transition('update')
+            .duration(750)
+            .attrTween('transform', function (d, i) {
+                return arcTweenText(d, i)
+            })
+            .attr('text-anchor', function (d) {
+                return d.textAngle > 180 ? 'start' : 'end'
+            })
+            .attr('dx', function (d) {
+                return d.textAngle > 180 ? 27 : 27
+            })
+            .attr('opacity', function (e) {
+                return e.x1 - e.x0 > 0.01 ? 1 : 0
+            })
+
+    })
+
+    function arcTweenText(a, i) {
+        var oi = d3.interpolate({
+            x0: (a.x0s ? a.x0s : 0),
+            x1: (a.x1s ? a.x1s : 0),
+            y0: (a.y0s ? a.y0s : 0),
+            y1: (a.y1s ? a.y1s : 0)
+        }, a)
+
+        function tween(t) {
+            var b = oi(t)
+            var ang = ((x((b.x0 + b.x1) / 2) - Math.PI / 2) / Math.PI * 180)
+
+            b.textAngle = (ang > 90) ? 180 + ang : ang
+            a.centroid = arc.centroid(b)
+
+            return 'translate(' + arc.centroid(b) + ')rotate(' + b.textAngle + ')'
         }
-        ////////
-        function render() {
-            if (oldWidth == innerWidth) return
-            oldWidth = innerWidth
-            var width = d3.select('#graph').node().offsetWidth
-            var height = width
-            if (innerWidth <= 925) {
-                width = innerWidth
-                height = innerHeight * .7
+
+        return tween
+    }
+
+    function arcTweenPath(a, i) {
+        var oi = d3.interpolate({
+            x0: (a.x0s ? a.x0s : 0),
+            x1: (a.x1s ? a.x1s : 0),
+            y0: (a.y0s ? a.y0s : 0),
+            y1: (a.y1s ? a.y1s : 0)
+        }, a)
+
+        function tween(t) {
+            var b = oi(t)
+
+            a.x0s = b.x0
+            a.x1s = b.x1
+            a.y0s = b.y0
+            a.y1s = b.y1
+
+            return arc(b)
+        }
+
+        if (i == 0 && node) {
+
+            var xd = d3.interpolate(x.domain(), [node.x0, node.x1])
+            var yd = d3.interpolate(y.domain(), [node.y0, 1])
+            var yr = d3.interpolate(y.range(), [node.y0 ? 40 : 0, radius])
+
+            return function (t) {
+                x.domain(xd(t))
+                y.domain(yd(t)).range(yr(t))
+
+                return tween(t)
             }
-            var radius = Math.min(width, height) / 2;
-            ///////
+        } else {
+            // first build
+            return tween
+        }
+    }
 
-            var x = d3.scale.linear()
-                .range([0, 2 * Math.PI]);
+    function click(d) {
+        node = d
+        const total = d.x1 - d.x0
 
-            var y = d3.scale.linear()
-                .range([0, radius]);
+        svg.selectAll('path')
+            .transition('click')
+            .duration(750)
+            .attrTween('d', function (d, i) {
+                return arcTweenPath(d, i)
+            })
 
-            var color = d3.scale.category20c();
-
-            var svg = d3.select("#graph").append("svg")
-                .attr("width", width)
-                .attr("height", height)
-                .append("g")
-                .attr("transform", "translate(" + width / 2 + "," + (height / 2 + 10) + ")");
-
-            var partition = d3.layout.partition()
-                .value(function (d) {
-                    return d.size;
-                });
-
-            var arc = d3.svg.arc()
-                .startAngle(function (d) {
-                    return Math.max(0, Math.min(2 * Math.PI, x(d.x)));
-                })
-                .endAngle(function (d) {
-                    return Math.max(0, Math.min(2 * Math.PI, x(d.x + d.dx)));
-                })
-                .innerRadius(function (d) {
-                    return Math.max(0, y(d.y));
-                })
-                .outerRadius(function (d) {
-                    return Math.max(0, y(d.y + d.dy));
-                });
-
-
-            d3.json(getURL() + "/static/resources/js/" + "flare.json", function (error, root) {
-                var g = svg.selectAll("g")
-                    .data(partition.nodes(root))
-                    .enter().append("g");
-
-                var path = g.append("path")
-                    .attr("d", arc)
-                    .style("fill", function (d) {
-                        return color((d.children ? d : d.parent).name);
-                    })
-                    .on("click", click);
-
-                var text = g.append("text")
-                    //.style('fill', 'white')
-                    .attr("transform", function (d) {
-                        return "rotate(" + computeTextRotation(d) + ")";
-                    })
-                    .attr("x", function (d) {
-                        return y(d.y);
-                    })
-                    .attr("dx", "6") // margin
-                    .attr("dy", ".35em") // vertical-align
-                    .text(function (d) {
-                        return d.name;
-                    });
-
-                function click(d) {
-                    // fade out all text elements
-                    text.transition().attr("opacity", 0);
-
-                    path.transition()
-                        .duration(750)
-                        .attrTween("d", arcTween(d))
-                        .each("end", function (e, i) {
-                            // check if the animated element's data e lies within the visible angle span given in d
-                            if (e.x >= d.x && e.x < (d.x + d.dx)) {
-                                // get a selection of the associated text element
-                                var arcText = d3.select(this.parentNode).select("text");
-                                // fade in the text element and recalculate positions
-                                arcText.transition().duration(750)
-                                    .attr("opacity", 1)
-                                    .attr("transform", function () {
-                                        return "rotate(" + computeTextRotation(e) + ")"
-                                    })
-                                    .attr("x", function (d) {
-                                        return y(d.y);
-                                    });
-                            }
-                        });
+        svg.selectAll('text')
+            .transition('click')
+            .attr('opacity', 1)
+            .duration(750)
+            .attrTween('transform', function (d, i) {
+                return arcTweenText(d)
+            })
+            .attr('text-anchor', function (d) {
+                return d.textAngle > 180 ? 'start' : 'end'
+            })
+            .attr('dx', function (d) {
+                if (d.data.name.length > 3) {
+                    return d.textAngle > 180 ? -23 : 23
                 }
-            });
-        d3.select(self.frameElement).style("height", height + "px");
+                return d.textAngle > 180 ? -13 : 13
+            })
+            .attr('opacity', function (e) {
+                // hide & show text
+                if (e.x0 >= d.x0 && e.x1 <= (d.x1 + 0.0000000000000001)) {
+                    const arcText = d3.select(this.parentNode).select('text')
+                    arcText.attr('visibility', function (d) {
+                        return (d.x1 - d.x0) / total < 0.01 ? 'hidden' : 'visible'
+                    })
+                } else {
+                    return 0
+                }
+            })
+    }
 
-        // Interpolate the scales!
-        function arcTween(d) {
-            var xd = d3.interpolate(x.domain(), [d.x, d.x + d.dx]),
-                yd = d3.interpolate(y.domain(), [d.y, 1]),
-                yr = d3.interpolate(y.range(), [d.y ? 20 : 0, radius]);
-            return function (d, i) {
-                return i
-                    ? function (t) {
-                        return arc(d);
-                    }
-                    : function (t) {
-                        x.domain(xd(t));
-                        y.domain(yd(t)).range(yr(t));
-                        return arc(d);
-                    };
-            };
-        }
-
-        function computeTextRotation(d) {
-            return (x(d.x + d.dx / 2) - Math.PI / 2) / Math.PI * 180;
-        }
-
-        }
+}
 
 
-        render()
+render()
