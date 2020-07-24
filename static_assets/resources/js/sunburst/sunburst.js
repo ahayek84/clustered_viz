@@ -13,6 +13,33 @@ function getURL() {
     return window.location.origin;
 }
 
+//////
+function readTextFile(file) {
+    var rawFile = new XMLHttpRequest();
+    var allText; // var declared in readTextFile scope
+    rawFile.open("GET", file, false);
+    rawFile.onreadystatechange = function () {
+        if (rawFile.readyState === 4) {
+            if (rawFile.status === 200 || rawFile.status == 0) {
+                allText = rawFile.responseText;
+            }
+        }
+    }
+    rawFile.send(null);
+    return allText; // here you can return the data filled in above
+}
+///
+function getFileJSON(file) {
+    var text = readTextFile(window.location.origin + "/static/resources/js/" + file)
+    var data = ''
+    if (text == null) {
+        data = {features: []}
+    } else {
+        data = JSON.parse(text);
+    }
+    return data
+}
+
 ////////
 function setSvg(svgn, radiusn) {
     svg = svgn
@@ -44,7 +71,7 @@ function sunburst() {
                 if (d.depth === 0) return 'white'
                 return colors(d.x0)
             })
-            //.on('click', update) // stop on click to on scroll abed
+            .on('click', click) // stop on click to on scroll abed
 
         gSlices.append('text')
             .attr('dy', '.35em')
@@ -143,7 +170,7 @@ function arcTweenPath(a, i) {
 }
 
 //
-function update(d) {
+function click(d) {
     node = d
     const total = d.x1 - d.x0
 
@@ -181,6 +208,12 @@ function update(d) {
                 return 0
             }
         })
+}
+
+function update(flag) {
+       var all_data = getFileJSON('scroll_data.json')
+       data = all_data['data' + flag]
+       click(data)
 }
 
 
