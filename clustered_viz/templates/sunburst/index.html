@@ -14,17 +14,113 @@
             <div id='sections'>
                 <div id="sec0">
                     <h3>Connect text and graphics</h3>
+                    <span class='mono'>graph-scroll</span>
+                    takes a selection of explanatory text sections and dispatches <span class='mono'>active</span>
+                    events as different sections are scrolled into to view. These active events are used to update a
+                    graph's state.
+                    takes a selection of explanatory text sections and dispatches <span class='mono'>active</span>
+                    events as different sections are scrolled into to view. These active events are used to update a
+                    graph's state.
+                    takes a selection of explanatory text sections and dispatches <span class='mono'>active</span>
+                    events as different sections are scrolled into to view. These active events are used to update a
+                    graph's state.
+                    takes a selection of explanatory text sections and dispatches <span class='mono'>active</span>
+                    events as different sections are scrolled into to view. These active events are used to update a
+                    graph's state.
+                    takes a selection of explanatory text sections and dispatches <span class='mono'>active</span>
+                    events as different sections are scrolled into to view. These active events are used to update a
+                    graph's state.
+                    takes a selection of explanatory text sections and dispatches <span class='mono'>active</span>
+                    events as different sections are scrolled into to view. These active events are used to update a
+                    graph's state.
                 </div>
+
                 <div id="sec1">
-                    <h3>Connect text and graphics</h3>
+                    <h3>Highlight active text</h3>
+                    The top most text section scrolled into view is classed <span
+                        class='mono'>graph-scroll-active</span>. This makes it easy to highlight the active section with
+                    css:
+                    takes a selection of explanatory text sections and dispatches <span class='mono'>active</span>
+                    events as different sections are scrolled into to view. These active events are used to update a
+                    graph's state.
+                    takes a selection of explanatory text sections and dispatches <span class='mono'>active</span>
+                    events as different sections are scrolled into to view. These active events are used to update a
+                    graph's state.
+                    takes a selection of explanatory text sections and dispatches <span class='mono'>active</span>
+                    events as different sections are scrolled into to view. These active events are used to update a
+                    graph's state.
+                    takes a selection of explanatory text sections and dispatches <span class='mono'>active</span>
+                    events as different sections are scrolled into to view. These active events are used to update a
+                    graph's state.
+                    takes a selection of explanatory text sections and dispatches <span class='mono'>active</span>
+                    events as different sections are scrolled into to view. These active events are used to update a
+                    graph's state.
                 </div>
+
+
                 <div id="sec2">
-                    <h3>Connect text and graphics</h3>
+                    <h3>Headers and footers</h3>
+                    To support headers and intro images/text, the explanatory text and graphic are wrapped with a
+                    container element:
+                    takes a selection of explanatory text sections and dispatches <span class='mono'>active</span>
+                    events as different sections are scrolled into to view. These active events are used to update a
+                    graph's state.
+                    takes a selection of explanatory text sections and dispatches <span class='mono'>active</span>
+                    events as different sections are scrolled into to view. These active events are used to update a
+                    graph's state.
+                    takes a selection of explanatory text sections and dispatches <span class='mono'>active</span>
+                    events as different sections are scrolled into to view. These active events are used to update a
+                    graph's state.
+                    takes a selection of explanatory text sections and dispatches <span class='mono'>active</span>
+                    events as different sections are scrolled into to view. These active events are used to update a
+                    graph's state.
+                    To support headers and intro images/text, the explanatory text and graphic are wrapped with a
+                    container element:
+                    takes a selection of explanatory text sections and dispatches <span class='mono'>active</span>
+                    events as different sections are scrolled into to view. These active events are used to update a
+                    graph's state.
+                    takes a selection of explanatory text sections and dispatches <span class='mono'>active</span>
+                    events as different sections are scrolled into to view. These active events are used to update a
+                    graph's state.
+                    takes a selection of explanatory text sections and dispatches <span class='mono'>active</span>
+                    events as different sections are scrolled into to view. These active events are used to update a
+                    graph's state.
                 </div>
+
                 <div id="sec3">
-                    <h3>Connect text and graphics</h3>
+                    <h3>Sticky graph</h3>
+                    When the graph starts to scroll out of view, <span class='mono'>postiion: sticky</span> keeps the
+                    graph element stuck to the top of the page while the text scrolls by.
+                    takes a selection of explanatory text sections and dispatches <span class='mono'>active</span>
+                    events as different sections are scrolled into to view. These active events are used to update a
+                    graph's state.
+                    takes a selection of explanatory text sections and dispatches <span class='mono'>active</span>
+                    events as different sections are scrolled into to view. These active events are used to update a
+                    graph's state.
+                    To support headers and intro images/text, the explanatory text and graphic are wrapped with a
+                    container element:
+                    takes a selection of explanatory text sections and dispatches <span class='mono'>active</span>
+                    events as different sections are scrolled into to view. These active events are used to update a
+                    graph's state.
+                    takes a selection of explanatory text sections and dispatches <span class='mono'>active</span>
+                    events as different sections are scrolled into to view. These active events are used to update a
+                    graph's state.
+                    takes a selection of explanatory text sections and dispatches <span class='mono'>active</span>
+                    events as different sections are scrolled into to view. These active events are used to update a
+                    graph's state.
+                    takes a selection of explanatory text sections and dispatches <span class='mono'>active</span>
+                    events as different sections are scrolled into to view. These active events are used to update a
+                    graph's state.
+                    takes a selection of explanatory text sections and dispatches <span class='mono'>active</span>
+                    events as different sections are scrolled into to view. These active events are used to update a
+                    graph's state.
+                    takes a selection of explanatory text sections and dispatches <span class='mono'>active</span>
+                    events as different sections are scrolled into to view. These active events are used to update a
+                    graph's state.
                 </div>
+
             </div>
+
         </div>
         <!--
         End the work
@@ -59,13 +155,32 @@
             var radius = Math.min(width, height) / 2;
             const svg = d3.select('#graph')
                 .append('svg')
+                .attrs({id: 'rect', class: 'rectsvg', style: 'position: absolute' + ';top:' + 0 + 'px'})
                 .attr('width', width)
                 .attr('height', height)
                 .append('g')
                 .attr('transform', 'translate(' + width / 2 + ',' + (height / 2) + ')')
-            setSvg(svg,radius)
+            setSvg(svg, radius)
             sunburst()
-            update(0)
+
+            var gs = d3.graphScroll()
+                .container(d3.select('.container-1'))
+                .graph(d3.selectAll('container-1 #graph'))
+                .eventId('uniqueId1')  // namespace for scroll and resize events
+                .sections(d3.selectAll('.container-1 #sections > div'))
+                // .offset(innerWidth < 900 ? innerHeight - 30 : 200)
+                .on('active', function (i) {
+                    var pos2 = getPos(document.getElementById('sec' + i))
+                    update(i)
+                    if (i == 0) {
+                        d3.select("#rect").transition().duration(1000)
+                            .attrs({style: 'position: absolute' + ';top:' + 0 + 'px'})
+                    }
+                    else {
+                        d3.select("#rect").transition().duration(1000)
+                            .attrs({style: 'position: absolute' + ';top:' + pos2.cy / 9 + 'px'})
+                    }
+                })
         }
 
         render()

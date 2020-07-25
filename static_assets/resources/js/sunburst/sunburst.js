@@ -83,9 +83,10 @@ function setSvg(svgn, radiusn) {
 }
 
 ///////
-function sunburst() {
-    d3.json(getURL() + "/static/resources/js/" + "flare.json", function (error, root) {
-        if (error) return console.error(error)
+function sunburst(flag = 0) {
+   // d3.json(getURL() + "/static/resources/js/" + "flare.json", function (error, root) {
+       // if (error) return console.error(error)
+        var root = getd(flag)
 
         const gSlices = svg.selectAll('g').data(partition(d3.hierarchy(root).sum(d => d.size)).descendants(), function (d) {
             return d.data.id
@@ -132,8 +133,7 @@ function sunburst() {
                 return e.x1 - e.x0 > 0.01 ? 1 : 0
             })
 
-    })
-
+    //})
 }
 
 /////
@@ -237,13 +237,31 @@ function click(d) {
         })
 }
 
-function update(flag) {
+/////
+function getd(flag) {
     var all_data = getFileJSON('flare.json')
     //data = all_data['data' + flag]
     // console.log(all_data)
-    console.log(_find(all_data, "Palestine"))
-    console.log(_find(all_data, "Gaza"))
-    console.log(_find(all_data, "Gaza city"))
+    if (flag == 0) {
+        return all_data
+    }
+    else if (flag == 1) {
+        return _find(all_data, "Palestine")
+    }
+    else if (flag == 2) {
+        return _find(all_data, "Gaza")
+    }
+    else {
+        return _find(all_data, "Gaza city")
+    }
+}
+
+/////
+function update(flag) {
+    var d = getd(flag)
+      d3.select("#graph").selectAll("path").remove();
+      d3.select("#graph").selectAll("text").remove();
+      sunburst(flag)
 }
 
 
