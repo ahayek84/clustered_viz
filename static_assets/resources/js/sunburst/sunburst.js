@@ -259,8 +259,8 @@ function getd(flag) {
 /////
 function update(flag) {
     var d = getd(flag)
-      d3.select("#graph").selectAll("path").remove();
-      d3.select("#graph").selectAll("text").remove();
+      d3.select("#rect").selectAll("path").remove();
+      d3.select("#rect").selectAll("text").remove();
       sunburst(flag)
 }
 
