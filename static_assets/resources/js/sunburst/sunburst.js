@@ -13,6 +13,32 @@ function getURL() {
     return window.location.origin;
 }
 
+/////
+function _find(collection, key) {
+    for (let kys of Object.keys(collection)) {
+        var o = collection[kys];
+        // console.log('---------')
+        // console.log(kys,o)
+        // console.log('---------')
+        if (kys == 'children') {
+            for (const [k, v] of Object.entries(o)) {
+                if (v['name'] === key) {
+                    return v
+                }
+                if (Array.isArray(v['children'])) {
+                    const _o = _find(v, key)
+                    if (_o) {
+                        return _o
+                    }
+                }
+            }
+        }
+        if (kys == key) {
+            return collection[key]
+        }
+    }
+}
+
 //////
 function readTextFile(file) {
     var rawFile = new XMLHttpRequest();
@@ -28,6 +54,7 @@ function readTextFile(file) {
     rawFile.send(null);
     return allText; // here you can return the data filled in above
 }
+
 ///
 function getFileJSON(file) {
     var text = readTextFile(window.location.origin + "/static/resources/js/" + file)
@@ -211,9 +238,12 @@ function click(d) {
 }
 
 function update(flag) {
-       var all_data = getFileJSON('scroll_data.json')
-       data = all_data['data' + flag]
-       click(data)
+    var all_data = getFileJSON('flare.json')
+    //data = all_data['data' + flag]
+    // console.log(all_data)
+    console.log(_find(all_data, "Palestine"))
+    console.log(_find(all_data, "Gaza"))
+    console.log(_find(all_data, "Gaza city"))
 }
 
 
