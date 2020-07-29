@@ -23,7 +23,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.home,name='home'),
     path('graph/',views.graph,name='graph'),
-    path('sunburst/',views.sunburst,name='sunburst')
+    path('sunburst/',views.sunburst,name='sunburst'),
+    path('mapline/',views.mapline,name='mapline')
 ]
 
 if settings.DEBUG is True:

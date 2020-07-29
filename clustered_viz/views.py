@@ -13,3 +13,6 @@ def graph(request):
 
 def sunburst(request):
     return render(request, 'sunburst/index.html', {})
+
+def mapline(request):
+    return render(request, 'map_line/index.html', {})
