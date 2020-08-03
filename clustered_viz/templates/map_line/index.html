@@ -38,13 +38,27 @@
 <div id="map"></div>
 <button id="pause"></button>
 <script>
-    mapboxgl.accessToken = 'pk.eyJ1IjoiYWhheWVrODQiLCJhIjoiY2ptN2hmM2k5NDZyazNxb2JpcHJpejZndyJ9.Oqx-TyF6wFAnnHuxN8c_3Q';
+    /// ammar
+    mapboxgl.accessToken = 'pk.eyJ1Ijoia25hZmVoIiwiYSI6ImNqMDk4OTh2ajAwMmQyd25yaWZndzY5c3MifQ.EQtUfQQ2gT2-AQ4InBgtOg';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/light-v10',
+        center: [34.35886, 31.40791],
+        zoom: 9,
+        pitch: 0,
+        bearing: 0,
+        container: 'map',
+        antialias: true,
+        interactive: false
+    });
+
+    /*mapboxgl.accessToken = 'pk.eyJ1IjoiYWhheWVrODQiLCJhIjoiY2ptN2hmM2k5NDZyazNxb2JpcHJpejZndyJ9.Oqx-TyF6wFAnnHuxN8c_3Q';
     var map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v11',
         center: [-122.486052, 37.830348],
         zoom: 15
-    });
+    });*/
 
     // Create a GeoJSON source with an empty lineString.
     var geojson = {
@@ -54,7 +68,8 @@
                 'type': 'Feature',
                 'geometry': {
                     'type': 'LineString',
-                    'coordinates': [[-122.48369693756104, 37.83381888486939]]
+                    'coordinates': [[34.276977, 31.262664]] // ammar
+                    //'coordinates': [[-122.48369693756104, 37.83381888486939]]
                 }
             }
         ]
@@ -67,7 +82,7 @@
     var resetTime = false; // indicator of whether time reset is needed for the animation
     var pauseButton = document.getElementById('pause');
     var counter = 0;
-    var coo = [
+    /*var coo = [
         [-122.48369693756104, 37.83381888486939],
         [-122.48348236083984, 37.83317489144141],
         [-122.48339653015138, 37.83270036637107],
@@ -89,6 +104,17 @@
         [-122.49163627624512, 37.832564787218985],
         [-122.49223709106445, 37.83337825839438],
         [-122.49378204345702, 37.83368330777276]
+    ]*/
+    /// ammar coo
+    var coo = [
+        [34.276977, 31.262664],
+            [34.258838, 31.288923],
+            [34.362715, 31.315663],
+            [34.319729, 31.343305],
+            [34.349002, 31.3254],
+            [34.423614, 31.452422],
+            [34.381636, 31.403496],
+            [34.358397, 31.421054]
     ]
 
     map.on('load', function () {
@@ -151,20 +177,20 @@
                 counter = 0;
             } else {
                 var x = progress / speedFactor;
-                if (Math.round(progress % (coo.length - 1)) == 0){
+                if (Math.round(progress % ((coo.length * 2) - 1)) == 0) {
                     //console.log('make me squeal');
-                                    //console.log(progress % (coo.length - 1) )
-                {#console.log('--------')#}
-                {#console.log(counter)#}
-                {#console.log(coo[counter])#}
-                {#console.log('--------')#}
-                counter = counter + 1;
-                // draw a sine wave with some math.
-                //var y = Math.sin((x * Math.PI) / 90) * 40;
-                // append new coordinates to the lineString
-                geojson.features[0].geometry.coordinates.push(coo[counter]);
-                // then update the map
-                map.getSource('line').setData(geojson);
+                    //console.log(progress % (coo.length - 1) )
+                    {#console.log('--------')#}
+                    {#console.log(counter)#}
+                    {#console.log(coo[counter])#}
+                    {#console.log('--------')#}
+                    counter = counter + 1;
+                    // draw a sine wave with some math.
+                    //var y = Math.sin((x * Math.PI) / 90) * 40;
+                    // append new coordinates to the lineString
+                    geojson.features[0].geometry.coordinates.push(coo[counter]);
+                    // then update the map
+                    map.getSource('line').setData(geojson);
                 }
 
 
