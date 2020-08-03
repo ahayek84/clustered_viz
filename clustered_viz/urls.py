@@ -24,7 +24,8 @@ urlpatterns = [
     path('',views.home,name='home'),
     path('graph/',views.graph,name='graph'),
     path('sunburst/',views.sunburst,name='sunburst'),
-    path('mapline/',views.mapline,name='mapline')
+    path('mapline/',views.mapline,name='mapline'),
+    path('maplineclick/',views.maplineclick,name='maplineclick')
 ]
 
 if settings.DEBUG is True:

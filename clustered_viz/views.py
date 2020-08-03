@@ -16,3 +16,6 @@ def sunburst(request):
 
 def mapline(request):
     return render(request, 'map_line/index.html', {})
+
+def maplineclick(request):
+    return render(request, 'map_line/chapters_map.html', {})
