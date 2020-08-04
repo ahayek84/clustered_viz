@@ -210,6 +210,7 @@
     var pauseButton = document.getElementById('pause');
     var cnt = 0;
     pauseButton.addEventListener('click', function () {
+        console.log('button clicked')
         var chapterNames = Object.keys(chapters);
         var size = Object.keys(chapters).length;
         var i = (cnt % size)
@@ -218,6 +219,14 @@
 
         } else {
             geojson.features[0].geometry.coordinates.push(coo[i]);
+            // abed
+            map.flyTo({
+                bearing: 90,
+                duration: 5000,
+                center: coo[i],
+                zoom: 18.3,
+                pitch: 20
+            });
             // then update the map
             map.getSource('line').setData(geojson);
         }
