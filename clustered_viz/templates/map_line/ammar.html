@@ -1,0 +1,261 @@
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.js'></script>
+
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1Ijoia25hZmVoIiwiYSI6ImNqMDk4OTh2ajAwMmQyd25yaWZndzY5c3MifQ.EQtUfQQ2gT2-AQ4InBgtOg';
+
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/light-v10',
+        center: [34.35886, 31.40791],
+        zoom: 9,
+        pitch: 0,
+        bearing: 0,
+        container: 'map',
+        antialias: true,
+        interactive: false
+    });
+    /// constant
+
+
+    var chapters = {
+        'chinatown': {
+            bearing: -17.6,
+            center: [34.276977, 31.262664],
+            zoom: 16.5,
+            pitch: 45
+        },
+        'coit-tower': {
+            duration: 5000,
+            center: [34.258838, 31.288923],
+            bearing: 27,
+            zoom: 19.5,
+            pitch: 90
+        },
+        'north-beach': {
+            bearing: 27,
+            duration: 5000,
+            center: [34.362715, 31.315663],
+            zoom: 19,
+            pitch: 40
+        },
+        'fishermans-wharf': {
+            bearing: 90,
+            duration: 5000,
+            center: [34.319729, 31.343305],
+            zoom: 19
+        },
+        'nob-hill': {
+            bearing: 27,
+            duration: 5000,
+            center: [34.349002, 31.3254],
+            zoom: 18,
+            pitch: 40,
+        },
+        'fairmont': {
+            bearing: 90,
+            duration: 5000,
+            center: [34.423614, 31.452422],
+            zoom: 19,
+            pitch: 60
+        },
+        'ferry-building': {
+            bearing: 120,
+            duration: 5000,
+            center: [34.381636, 31.403496],
+            zoom: 18.3,
+            pitch: 60
+        },
+        'market-street': {
+            bearing: 90,
+            duration: 5000,
+            center: [34.358397, 31.421054],
+            zoom: 18.3,
+            pitch: 20
+        }
+    };
+
+
+    // Create a GeoJSON source with an empty lineString.
+    var geojson = {
+        'type': 'FeatureCollection',
+        'features': [
+            {
+                'type': 'Feature',
+                'geometry': {
+                    'type': 'LineString',
+                    'coordinates': [[34.276977, 31.262664]] // first chapter center
+                }
+            }
+        ]
+    };
+
+    // Create a GeoJSON source with an empty lineString.
+    var mgeojson = {
+        'type': 'FeatureCollection',
+        'features': [
+            {
+                'type': 'Feature',
+                'properties': {},
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [34.276977, 31.262664]
+                }
+            }
+        ]
+    };
+
+
+    // The 'building' layer in the mapbox-streets vector source contains building-height
+    // data from OpenStreetMap.
+    map.on('load', function () {
+
+        // Add an image to use as a custom marker
+        map.loadImage(
+            'https://docs.mapbox.com/mapbox-gl-js/assets/custom_marker.png',
+            function (error, image) {
+                if (error) throw error;
+                map.addImage('custom-marker', image);
+                // Add a GeoJSON source with 3 points.
+                map.addSource('points', {
+                    'type': 'geojson',
+                    'data': mgeojson
+                });
+
+                // Add a symbol layer
+                map.addLayer({
+                    'id': 'symbols',
+                    'type': 'symbol',
+                    'source': 'points',
+                    'layout': {
+                        'icon-image': 'custom-marker'
+                    }
+                });
+            }
+        );
+
+        map.addSource('line', {
+            'type': 'geojson',
+            'data': geojson
+        });
+        // add the line which will be modified in the animation
+        map.addLayer({
+            'id': 'line-animation',
+            'type': 'line',
+            'source': 'line',
+            'layout': {
+                'line-cap': 'round',
+                'line-join': 'round'
+            },
+            'paint': {
+                'line-color': 'blue',
+                'line-width': 5,
+                'line-opacity': 0.8
+            }
+        });
+// Insert the layer beneath any symbol layer.
+        var layers = map.getStyle().layers;
+
+        var labelLayerId;
+        for (var i = 0; i < layers.length; i++) {
+            if (layers[i].type === 'symbol' && layers[i].layout['text-field']) {
+                labelLayerId = layers[i].id;
+                break;
+            }
+        }
+
+        map.addLayer({
+            'id': '3d-buildings',
+            'source': 'composite',
+            'source-layer': 'building',
+            'filter': ['==', 'extrude', 'true'],
+            'type': 'fill-extrusion',
+            'minzoom': 15,
+            'paint': {
+                'fill-extrusion-color': '#aaa',
+
+// use an 'interpolate' expression to add a smooth transition effect to the
+// buildings as the user zooms in
+                'fill-extrusion-height': [
+                    "interpolate", ["linear"], ["zoom"],
+                    15, 0,
+                    15.05, ["get", "height"]
+                ],
+                'fill-extrusion-base': [
+                    "interpolate", ["linear"], ["zoom"],
+                    15, 0,
+                    15.05, ["get", "min_height"]
+                ],
+                'fill-extrusion-opacity': .6
+            }
+        }, labelLayerId);
+    });
+
+    // end onload
+
+    function animateLine(chaptername) {
+        if (IsNameFirstInCoo(chapters, chaptername)) {
+            geojson.features[0].geometry.coordinates = [];
+            mgeojson.features[0].geometry.coordinates = [];
+
+            mgeojson.features[0].geometry.coordinates = chapters[chaptername].center;
+            map.getSource('points').setData(mgeojson);
+
+        } else {
+            geojson.features[0].geometry.coordinates.push(chapters[chaptername].center);
+            mgeojson.features[0].geometry.coordinates = chapters[chaptername].center;
+            // then update the map
+            map.getSource('points').setData(mgeojson);
+            map.getSource('line').setData(geojson);
+        }
+    }
+
+    // On every scroll event, check which element is on screen
+    window.onscroll = function () {
+        var chapterNames = Object.keys(chapters);
+        for (var i = 0; i < chapterNames.length; i++) {
+            var chapterName = chapterNames[i];
+            if (isElementOnScreen(chapterName)) {
+                setActiveChapter(chapterName);
+                break;
+            }
+        }
+    };
+
+
+    var activeChapterName = 'chinatown';
+
+    function setActiveChapter(chapterName) {
+        if (chapterName === activeChapterName) return;
+
+
+        animateLine(chapterName);
+        map.flyTo(chapters[chapterName]);
+
+        document.getElementById(chapterName).setAttribute('class', 'active');
+        document.getElementById(activeChapterName).setAttribute('class', '');
+
+        activeChapterName = chapterName;
+    }
+
+    function isElementOnScreen(id) {
+        var element = document.getElementById(id);
+        var bounds = element.getBoundingClientRect();
+        return bounds.top < window.innerHeight && bounds.bottom > 300;
+    }
+
+    function IsNameFirstInCoo(chap, nam) {
+        var coo = false;
+        for (cha in chap) {
+            if (cha == nam) {
+                coo = true;
+            }
+            else {
+                break;
+            }
+        }
+        return coo
+    }
+
+
+</script>
+
