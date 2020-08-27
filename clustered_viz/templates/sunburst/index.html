@@ -126,7 +126,80 @@
         End the work
         -->
     </div>
-
+    <script>
+        var all_data = {
+            "name": "States",
+            "children": [
+                {
+                    "name": "Palestine",
+                    "children": [
+                        {
+                            "name": "Gaza",
+                            "children": [
+                                {
+                                    "name": "North Gaza",
+                                    "size": 1983
+                                },
+                                {
+                                    "name": "Rafah",
+                                    "size": 2047
+                                },
+                                {
+                                    "name": "Khan Yunus",
+                                    "size": 1375
+                                },
+                                {
+                                    "name": "Gaza city",
+                                    "children": [
+                                        {
+                                            "name": "Naser",
+                                            "size": 1983
+                                        },
+                                        {
+                                            "name": "Tofah",
+                                            "size": 2047
+                                        },
+                                        {
+                                            "name": "Glaa street",
+                                            "size": 1375
+                                        },
+                                        {
+                                            "name": "The beach",
+                                            "size": 8746
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Ramallah",
+                            "size": 2047
+                        },
+                        {
+                            "name": "Hebron",
+                            "size": 1375
+                        },
+                        {
+                            "name": "Jercho",
+                            "size": 8746
+                        }
+                    ]
+                },
+                {
+                    "name": "Russia",
+                    "size": 3812
+                },
+                {
+                    "name": "Germany (FRG)",
+                    "size": 6714
+                },
+                {
+                    "name": "France",
+                    "size": 743
+                }
+            ]
+        }
+    </script>
     <script type="text/javascript" src="{% static 'resources\js\d3v4+jetpack.js' %}"></script>
     <script type="text/javascript" src="{% static 'resources\js\graph-scroll.js' %}"></script>
     <script type="text/javascript" src="{% static 'resources\js\sunburst\sunburst.js' %}"></script>

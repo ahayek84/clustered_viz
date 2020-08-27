@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e535ea2-eeb0-4b97-910c-e0cb042c0ccb" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/clustered_viz/templates/map_line/ammar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clustered_viz/templates/map_line/chapters_map.html" beforeDir="false" afterPath="$PROJECT_DIR$/clustered_viz/templates/map_line/chapters_map.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clustered_viz/templates/sunburst/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/clustered_viz/templates/sunburst/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static_assets/resources/js/sunburst/sunburst.js" beforeDir="false" afterPath="$PROJECT_DIR$/static_assets/resources/js/sunburst/sunburst.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,87 +19,51 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/clustered_viz/templates/sunburst/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="56" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requirements.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="heroku_commands.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/heroku_commands.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="27" column="2" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/clustered_viz/templates/map_line/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="858">
-              <caret line="39" column="10" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
+            <state relative-caret-position="280">
+              <caret line="132" column="40" selection-start-line="132" selection-start-column="40" selection-end-line="132" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/clustered_viz/templates/menu.html">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/clustered_viz/templates/sunburst/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+            <state relative-caret-position="440">
+              <caret line="143" column="52" lean-forward="true" selection-start-line="143" selection-start-column="52" selection-end-line="143" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/clustered_viz/templates/header.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1914">
-              <caret line="87" column="35" selection-start-line="87" selection-start-column="35" selection-end-line="87" selection-end-column="35" />
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="679">
+                <caret line="66" column="16" lean-forward="true" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
+              </first_editor>
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chapters_map.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/clustered_viz/templates/map_line/chapters_map.html">
+      <file leaf-file-name="sunburst.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static_assets/resources/js/sunburst/sunburst.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="367" column="13" lean-forward="true" selection-start-line="367" selection-start-column="13" selection-end-line="367" selection-end-column="13" />
+            <state relative-caret-position="230">
+              <caret line="58" column="20" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ammar.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/clustered_viz/templates/map_line/ammar.html">
+      <file leaf-file-name="flare.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static_assets/resources/js/flare.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/clustered_viz/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/clustered_viz/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="20" column="49" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="49" />
+            <state relative-caret-position="286">
+              <caret line="13" column="13" lean-forward="true" selection-end-line="71" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -117,7 +81,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>docu</find>
       <find>getURL</find>
       <find>placeRect</find>
       <find>svg</find>
@@ -147,6 +110,7 @@
       <find>getCooByName</find>
       <find>getCoo</find>
       <find>isElementOnScreen</find>
+      <find>getFileJSON</find>
     </findStrings>
     <replaceStrings>
       <replace>graph</replace>
@@ -195,16 +159,16 @@
         <option value="$PROJECT_DIR$/static_assets/resources/js/graph_scroller/gs.css" />
         <option value="$PROJECT_DIR$/static_assets/resources/js/graph_scroller/barchart.js" />
         <option value="$PROJECT_DIR$/static_assets/resources/js/flare.json" />
-        <option value="$PROJECT_DIR$/clustered_viz/templates/sunburst/index.html" />
         <option value="$PROJECT_DIR$/static_assets/resources/js/sunburst/sb.css" />
-        <option value="$PROJECT_DIR$/static_assets/resources/js/sunburst/sunburst.js" />
         <option value="$PROJECT_DIR$/clustered_viz/templates/map_line/old.html" />
         <option value="$PROJECT_DIR$/clustered_viz/views.py" />
         <option value="$PROJECT_DIR$/clustered_viz/urls.py" />
-        <option value="$PROJECT_DIR$/clustered_viz/templates/map_line/index.html" />
         <option value="$PROJECT_DIR$/clustered_viz/templates/header.html" />
         <option value="$PROJECT_DIR$/clustered_viz/templates/map_line/ammar.html" />
         <option value="$PROJECT_DIR$/clustered_viz/templates/map_line/chapters_map.html" />
+        <option value="$PROJECT_DIR$/clustered_viz/templates/map_line/index.html" />
+        <option value="$PROJECT_DIR$/static_assets/resources/js/sunburst/sunburst.js" />
+        <option value="$PROJECT_DIR$/clustered_viz/templates/sunburst/index.html" />
       </list>
     </option>
   </component>
@@ -253,13 +217,6 @@
               <item name="clustered_viz" type="462c0819:PsiDirectoryNode" />
               <item name="clustered_viz" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="map_line" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="clustered_viz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="clustered_viz" type="462c0819:PsiDirectoryNode" />
-              <item name="clustered_viz" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="sunburst" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -272,6 +229,21 @@
               <item name="clustered_viz" type="462c0819:PsiDirectoryNode" />
               <item name="static_assets" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="clustered_viz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="clustered_viz" type="462c0819:PsiDirectoryNode" />
+              <item name="static_assets" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="clustered_viz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="clustered_viz" type="462c0819:PsiDirectoryNode" />
+              <item name="static_assets" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="sunburst" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -344,13 +316,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588506723975</updated>
-    </task>
-    <task id="LOCAL-00001" summary="forth">
-      <created>1588510672584</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1588510672584</updated>
     </task>
     <task id="LOCAL-00002" summary="forth">
       <created>1588511076854</created>
@@ -688,7 +653,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596563247256</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="all changes">
+      <created>1596642127295</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1596642127295</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TodoView">
@@ -705,13 +677,13 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="14" weight="0.32900432" />
-      <window_info anchor="bottom" id="Event Log" order="21" sideWeight="0.5234541" side_tool="true" visible="true" weight="0.16558442" />
+      <window_info anchor="bottom" id="Event Log" order="21" sideWeight="0.52398723" side_tool="true" visible="true" weight="0.2391775" />
       <window_info anchor="bottom" id="Database Changes" order="20" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="19" sideWeight="0.48027718" weight="0.2391775" />
-      <window_info anchor="bottom" id="Python Console" order="23" sideWeight="0.49946696" weight="0.32900432" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="19" sideWeight="0.4760128" visible="true" weight="0.2391775" />
+      <window_info anchor="bottom" id="Python Console" order="23" sideWeight="0.4989339" weight="0.32900432" />
       <window_info anchor="bottom" id="Run" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="22" sideWeight="0.47654584" visible="true" weight="0.16558442" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21215352" />
+      <window_info anchor="bottom" id="Terminal" order="22" sideWeight="0.47334754" weight="0.16558442" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2185501" />
       <window_info anchor="bottom" id="Docker" order="18" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="SciView" order="5" />
@@ -731,25 +703,25 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21055438" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.26406926" />
       <window_info anchor="bottom" id="Run" order="3" />
-      <window_info anchor="bottom" id="Python Console" order="13" weight="0.32900432" />
       <window_info anchor="bottom" id="Find" order="2" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.29220778" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.26406926" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Messages" order="0" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="13" weight="0.32900432" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -841,18 +813,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/runtime.txt">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="103">
-            <caret line="48" selection-start-line="48" selection-end-line="52" selection-end-column="13" />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static_assets/resources/js/test_index.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -1002,13 +962,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static_assets/resources/js/flare.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/clustered_viz/templates/graph_scroller/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3916">
@@ -1037,27 +990,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static_assets/resources/js/sunburst/sunburst.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2200">
-          <caret line="100" column="14" selection-start-line="100" selection-start-column="14" selection-end-line="100" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/clustered_viz/templates/map_line/old.html" />
-    <entry file="file://$PROJECT_DIR$/clustered_viz/templates/sunburst/index.html">
+    <entry file="file://$PROJECT_DIR$/heroku_commands.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="56" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="56" />
+        <state relative-caret-position="567">
+          <caret line="30" column="2" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/clustered_viz/templates/map_line/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="39" column="10" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/clustered_viz/templates/menu.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -1068,18 +1010,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/clustered_viz/templates/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1914">
+        <state relative-caret-position="676">
           <caret line="87" column="35" selection-start-line="87" selection-start-column="35" selection-end-line="87" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/heroku_commands.txt">
+    <entry file="file://$PROJECT_DIR$/clustered_viz/templates/map_line/chapters_map.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="27" column="2" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="24" />
+        <state relative-caret-position="22">
+          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clustered_viz/templates/map_line/ammar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="7" selection-end-line="261" />
         </state>
       </provider>
     </entry>
@@ -1097,17 +1043,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/clustered_viz/templates/map_line/ammar.html">
+    <entry file="file://$PROJECT_DIR$/clustered_viz/templates/map_line/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        <state relative-caret-position="280">
+          <caret line="132" column="40" selection-start-line="132" selection-start-column="40" selection-end-line="132" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/clustered_viz/templates/map_line/chapters_map.html">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="679">
+            <caret line="66" column="16" lean-forward="true" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static_assets/resources/js/flare.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="367" column="13" lean-forward="true" selection-start-line="367" selection-start-column="13" selection-end-line="367" selection-end-column="13" />
+        <state relative-caret-position="286">
+          <caret line="13" column="13" lean-forward="true" selection-end-line="71" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static_assets/resources/js/sunburst/sunburst.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="58" column="20" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clustered_viz/templates/sunburst/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="143" column="52" lean-forward="true" selection-start-line="143" selection-start-column="52" selection-end-line="143" selection-end-column="52" />
         </state>
       </provider>
     </entry>

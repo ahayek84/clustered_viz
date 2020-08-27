@@ -57,7 +57,11 @@ function readTextFile(file) {
 
 ///
 function getFileJSON(file) {
-    var text = readTextFile(window.location.origin + "/static/resources/js/" + file)
+    var origin = window.location.origin;
+    if (origin.includes("webflow") ){
+     var origin = "https://afternoon-earth-08431.herokuapp.com"
+    }
+    var text = readTextFile(origin + "/static/resources/js/" + file)
     var data = ''
     if (text == null) {
         data = {features: []}
@@ -239,7 +243,7 @@ function click(d) {
 
 /////
 function getd(flag) {
-    var all_data = getFileJSON('flare.json')
+    //var all_data = getFileJSON('flare.json')
     //data = all_data['data' + flag]
     // console.log(all_data)
     if (flag == 0) {
