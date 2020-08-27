@@ -242,6 +242,7 @@ function click(d) {
 }
 
 /////
+/*
 function getd(flag) {
     //var all_data = getFileJSON('flare.json')
     //data = all_data['data' + flag]
@@ -258,7 +259,7 @@ function getd(flag) {
     else {
         return _find(all_data, "Gaza city")
     }
-}
+}*/
 
 /////
 function update(flag) {

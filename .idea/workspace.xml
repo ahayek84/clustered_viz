@@ -21,17 +21,26 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/clustered_viz/templates/map_line/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
+            <state relative-caret-position="264">
               <caret line="132" column="40" selection-start-line="132" selection-start-column="40" selection-end-line="132" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/clustered_viz/templates/sunburst/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="143" column="52" lean-forward="true" selection-start-line="143" selection-start-column="52" selection-end-line="143" selection-end-column="52" />
+            <state relative-caret-position="4818">
+              <caret line="219" column="9" lean-forward="true" selection-start-line="219" selection-start-column="9" selection-end-line="219" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/clustered_viz/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="65" column="41" lean-forward="true" selection-start-line="55" selection-end-line="65" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -40,8 +49,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="679">
-                <caret line="66" column="16" lean-forward="true" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
+              <first_editor relative-caret-position="503">
+                <caret line="52" column="5" selection-start-line="52" selection-start-column="2" selection-end-line="52" selection-end-column="13" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -53,8 +62,8 @@
       <file leaf-file-name="sunburst.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static_assets/resources/js/sunburst/sunburst.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="58" column="20" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="20" />
+            <state relative-caret-position="602">
+              <caret line="261" column="3" selection-start-line="261" selection-start-column="3" selection-end-line="261" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -63,7 +72,7 @@
         <entry file="file://$PROJECT_DIR$/static_assets/resources/js/flare.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="286">
-              <caret line="13" column="13" lean-forward="true" selection-end-line="71" selection-end-column="1" />
+              <caret line="13" column="13" selection-end-line="71" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -81,9 +90,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getURL</find>
-      <find>placeRect</find>
-      <find>svg</find>
       <find>path_for_text</find>
       <find>titl</find>
       <find>title</find>
@@ -97,7 +103,6 @@
       <find>23</find>
       <find>click</find>
       <find>width</find>
-      <find>update</find>
       <find>_find</find>
       <find>rect</find>
       <find>rec</find>
@@ -110,7 +115,11 @@
       <find>getCooByName</find>
       <find>getCoo</find>
       <find>isElementOnScreen</find>
+      <find>update</find>
+      <find>sunburst</find>
+      <find>readTextFile</find>
       <find>getFileJSON</find>
+      <find>getd</find>
     </findStrings>
     <replaceStrings>
       <replace>graph</replace>
@@ -228,22 +237,20 @@
               <item name="clustered_viz" type="b2602c69:ProjectViewProjectNode" />
               <item name="clustered_viz" type="462c0819:PsiDirectoryNode" />
               <item name="static_assets" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="coreui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="clustered_viz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="clustered_viz" type="462c0819:PsiDirectoryNode" />
+              <item name="static_assets" type="462c0819:PsiDirectoryNode" />
+              <item name="coreui" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="clustered_viz" type="b2602c69:ProjectViewProjectNode" />
               <item name="clustered_viz" type="462c0819:PsiDirectoryNode" />
               <item name="static_assets" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="clustered_viz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="clustered_viz" type="462c0819:PsiDirectoryNode" />
-              <item name="static_assets" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="sunburst" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -316,13 +323,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588506723975</updated>
-    </task>
-    <task id="LOCAL-00002" summary="forth">
-      <created>1588511076854</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1588511076854</updated>
     </task>
     <task id="LOCAL-00003" summary="fix index and file structure">
       <created>1589736614826</created>
@@ -660,7 +660,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596642127295</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="all changes for webio">
+      <created>1598517989132</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1598517989133</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TodoView">
@@ -677,13 +684,13 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="14" weight="0.32900432" />
-      <window_info anchor="bottom" id="Event Log" order="21" sideWeight="0.52398723" side_tool="true" visible="true" weight="0.2391775" />
+      <window_info anchor="bottom" id="Event Log" order="21" sideWeight="0.5282516" side_tool="true" visible="true" weight="0.16558442" />
       <window_info anchor="bottom" id="Database Changes" order="20" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="19" sideWeight="0.4760128" visible="true" weight="0.2391775" />
+      <window_info anchor="bottom" id="Version Control" order="19" sideWeight="0.47547975" weight="0.2391775" />
       <window_info anchor="bottom" id="Python Console" order="23" sideWeight="0.4989339" weight="0.32900432" />
       <window_info anchor="bottom" id="Run" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="22" sideWeight="0.47334754" weight="0.16558442" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2185501" />
+      <window_info anchor="bottom" id="Terminal" order="22" sideWeight="0.4717484" visible="true" weight="0.16558442" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22068231" />
       <window_info anchor="bottom" id="Docker" order="18" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="SciView" order="5" />
@@ -703,25 +710,25 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21055438" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.26406926" />
       <window_info anchor="bottom" id="Run" order="3" />
+      <window_info anchor="bottom" id="Python Console" order="13" weight="0.32900432" />
       <window_info anchor="bottom" id="Find" order="2" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.29220778" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.26406926" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Messages" order="0" />
-      <window_info anchor="bottom" id="Python Console" order="13" weight="0.32900432" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -757,7 +764,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" sss push coreui assets2 33" />
     <MESSAGE value="fix label of map" />
     <MESSAGE value="put control over map refresh" />
     <MESSAGE value="put control over map refresh v2" />
@@ -782,7 +788,8 @@
     <MESSAGE value="add line visulization .. with map" />
     <MESSAGE value="add ammar map and button" />
     <MESSAGE value="all changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="all changes" />
+    <MESSAGE value="all changes for webio" />
+    <option name="LAST_COMMIT_MESSAGE" value="all changes for webio" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/static/resources/index.js" />
@@ -910,13 +917,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static_assets/coreui/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="230" selection-start-line="230" selection-end-line="230" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static_assets/resources/js/d3-geo-projection.v2.min.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -924,13 +924,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2120">
           <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clustered_viz/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="87" column="7" selection-start-line="87" selection-start-column="7" selection-end-line="87" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1043,18 +1036,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/clustered_viz/templates/map_line/index.html">
+    <entry file="file://$PROJECT_DIR$/static_assets/resources/js/flare.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="132" column="40" selection-start-line="132" selection-start-column="40" selection-end-line="132" selection-end-column="40" />
+        <state relative-caret-position="286">
+          <caret line="13" column="13" selection-end-line="71" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="679">
-            <caret line="66" column="16" lean-forward="true" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
+          <first_editor relative-caret-position="503">
+            <caret line="52" column="5" selection-start-line="52" selection-start-column="2" selection-end-line="52" selection-end-column="13" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
@@ -1062,24 +1055,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static_assets/resources/js/flare.json">
+    <entry file="file://$PROJECT_DIR$/clustered_viz/templates/map_line/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="13" lean-forward="true" selection-end-line="71" selection-end-column="1" />
+        <state relative-caret-position="264">
+          <caret line="132" column="40" selection-start-line="132" selection-start-column="40" selection-end-line="132" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static_assets/resources/js/sunburst/sunburst.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="58" column="20" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="20" />
+        <state relative-caret-position="602">
+          <caret line="261" column="3" selection-start-line="261" selection-start-column="3" selection-end-line="261" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/clustered_viz/templates/sunburst/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="143" column="52" lean-forward="true" selection-start-line="143" selection-start-column="52" selection-end-line="143" selection-end-column="52" />
+        <state relative-caret-position="4818">
+          <caret line="219" column="9" lean-forward="true" selection-start-line="219" selection-start-column="9" selection-end-line="219" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static_assets/coreui/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-194382">
+          <caret line="230" selection-start-line="230" selection-end-line="230" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clustered_viz/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="65" column="41" lean-forward="true" selection-start-line="55" selection-end-line="65" selection-end-column="41" />
         </state>
       </provider>
     </entry>
